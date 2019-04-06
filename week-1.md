@@ -7,9 +7,9 @@ Real-Time Web - Minor Web Development
 
 
 ## Excercises
-1. [][excercise1]
-2. [][excercise2]
-3. [][excercise3]
+1. [Basic setup][excercise1]
+2. [A unique chat app ][excercise2]
+3. [Deploy your app][excercise3]
 
 ### Excersise 1: Basic setup
 
