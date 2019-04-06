@@ -2,7 +2,7 @@
 
 During this course you will learn how to build a real-time / live application. You will learn techniques to setup an open connection between the client and the server enabling you to send data in real-time, both ways at the same time.
 
-## Leerdoelen
+## Goals
 - _Real-Time complexity_
 - _Real-Time client-server interaction_
 - _Real-Time data management_
