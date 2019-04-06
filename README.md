@@ -55,4 +55,4 @@ Goal: Handle data sharing and life cycle of the app
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
 
-[rubric]https://docs.google.com/spreadsheets/d/1uGJUt2-QmmgR8bChAzct4s0lO3EnK23tztIIzT2lGCQ/edit?usp=sharing
+[rubric]: https://docs.google.com/spreadsheets/d/1uGJUt2-QmmgR8bChAzct4s0lO3EnK23tztIIzT2lGCQ/edit?usp=sharing
