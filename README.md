@@ -3,11 +3,11 @@
 During this course you will learn how to build a real-time / live application. You will learn techniques to setup an open connection between the client and the server enabling you to send data in real-time, both ways at the same time.
 
 ## Goals
-- _ Dealt with real-time complexity_
-- _ Handle real-time client-server interaction_
-- _ Handle real-time data management_
-- _ Handle multi-user support_
-- _ Deal with offline scenarios_
+- _Deal with real-time complexity_
+- _Handle real-time client-server interaction_
+- _Handle real-time data management_
+- _Handle multi-user support_
+- _Deal with offline scenarios_
 
 [Rubric][rubric]
 
@@ -18,7 +18,7 @@ During this course you will learn how to build a real-time / live application. Y
 Goal: Build and deploy an unique barebone real-time app  
 
 [Excercises](...)    
-[Slides](...)  
+[Slides](https://docs.google.com/presentation/d/1EVsEFgBnG699nce058ss_PkVJROQXDp5wJJ-IRXvzTA/edit?usp=sharing)  
 
 
 ### Week 2 - Sharing is caring  
