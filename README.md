@@ -17,24 +17,27 @@ During this course you will learn how to build a real-time / live application. Y
 
 Goal: Build and deploy an unique barebone real-time app  
 
-[Excercises](...)    
+[Excercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md)    
 [Slides](https://docs.google.com/presentation/d/1EVsEFgBnG699nce058ss_PkVJROQXDp5wJJ-IRXvzTA/edit?usp=sharing)  
 
 
 ### Week 2 - Sharing is caring  
 
 Goal: Store, manipulate and share data between server-client   
+<!--
 [Excercises]()    
 [Slides]()
+-->
 
 
 ### Week 3 - Let’s take this show on the road 
 
 Goal: Handle data sharing and life cycle of the app 
 
-[Excercise](...)  
+<!--
+[Excercises](...)  
 [Slides](...)
-
+-->
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
