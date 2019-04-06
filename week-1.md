@@ -3,7 +3,7 @@ Real-Time Web - Minor Web Development
 
 ## Intention
 
-...
+After all you learned so far, you now will learn how to build real-time applications, and rule the world!
 
 
 ## Excercises
