@@ -4,9 +4,11 @@ Realtime Web @cmda-minor-web · 2018-2019
 Intro..
 
 ## Leerdoelen
-- _..._
-- _..._
-- _..._
+- _Real-Time complexiteit_
+- _Real-Time client-server interactie_
+- _Real-Time data management_
+- _Multi-user support_
+- _Offline_
 
 [Rubric](...)
 
