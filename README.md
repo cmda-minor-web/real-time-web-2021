@@ -10,7 +10,7 @@ During this course you will learn how to build a real-time / live application. Y
 - _Multi-user support_
 - _Offline_
 
-[Rubric](rubric)
+[Rubric][rubric]
 
 ## Curriculum
 
