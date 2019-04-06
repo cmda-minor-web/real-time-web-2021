@@ -8,7 +8,7 @@ Intro..
 - _..._
 - _..._
 
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTO-pc2UMvpT0pUjt6NJeckc5N9E7QvCxEfVJW1JjuM0m_9MM8ra05J0s6br486Rocz5JVMhAX_C37_/pubhtml?gid=0&single=true)
+[Rubric](...)
 
 ## Lesprogramma
 
