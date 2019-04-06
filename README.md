@@ -16,16 +16,16 @@ During this course you will learn how to build a real-time / live application. Y
 
 ### Week 1 - Hello Server
 
-Goal: Build and deploy an unique barebone real-time app
+Goal: Build and deploy an unique barebone real-time app  
 
-[Excercises](...)  
+[Excercises](...)    
 [Slides](...)  
 
 
 ### Week 2 - Sharing is caring  
 
 Goal: Store, manipulate and share data between server-client 
-[Excercises]()  
+[Excercises]()    
 [Slides]()
 
 
