@@ -24,7 +24,7 @@ Goal: Build and deploy an unique barebone real-time app
 
 ### Week 2 - Sharing is caring  
 
-Goal: Store, manipulate and share data between server-client 
+Goal: Store, manipulate and share data between server-client   
 [Excercises]()    
 [Slides]()
 
@@ -33,7 +33,7 @@ Goal: Store, manipulate and share data between server-client
 
 Goal: Handle data sharing and life cycle of the app 
 
-[Excercise](...)
+[Excercise](...)  
 [Slides](...)
 
 
