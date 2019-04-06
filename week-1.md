@@ -31,16 +31,12 @@ Set-up Express (or similar) for static file serving / templating
 
 *Resources:* [express api][express api]
 
-...
-
-#### Resources
-* ...
 
 
 
 
 
-[excercise1]: 
+[excercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#excersise-1-basic-setup 
 [excercise2]: 
 [excercise3]:
 [repo]:https://github.com/cmda-minor-web/real-time-web-1819
