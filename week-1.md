@@ -33,10 +33,10 @@ Set-up Express (or similar) for static file serving / templating
 
 ### Excercise 2: A unique chat app 
 
-Set-up socket.io. Create a basic real-time app using sockets. Bare minimum is a successful message from client to server and from server to client (“round trip”) as well as one additional chat feature YOU HAVE COME UP WITH. Here is an example I made that slowly fades out words commonly used by the people writing the chat messages forcing them to use new words.
+Set-up socket.io. Create a basic real-time app using sockets. Bare minimum is a successful message from client to server and from server to client (“round trip”) as well as one additional chat feature YOU HAVE COME UP WITH. Here is an [example][example razpudding] I made that slowly fades out words commonly used by the people writing the chat messages forcing them to use new words.
 Creating a unique feature often means storing some information about users serverside in-memory. Ask us if you have any questions about how to achieve that.
 
-Examples that are not unique: Storing nicknames, showing who’s online or any of the other feature requests listed at the bottom of the socket.io tutorial.
+[Examples that are not unique][get started]: Storing nicknames, showing who’s online or any of the other feature requests listed at the bottom of the socket.io tutorial.
 Examples that are unique: Using D3 to structure texts into svg art, using words to fight each other in a text based game, additional features you can earn if you stay in chat long enough.
 It doesn’t even have to be a chat app, just use the socket.io framework.
 
@@ -66,4 +66,6 @@ Get your app running on the web! Put a link to your live demo at the top of your
 [prettier]:https://github.com/prettier/prettier
 [eslint]:https://github.com/eslint/eslint
 [express api]:https://expressjs.com/en/4x/api.html
+[example razpudding]: https://github.com/Razpudding/socketio-chat-app
+[get started]:https://socket.io/get-started/chat/
 
