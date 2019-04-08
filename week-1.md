@@ -11,7 +11,7 @@ After all you learned so far, you now will learn how to build real-time applicat
 2. [A unique chat app ][exercise2]
 3. [Deploy your app][exercise3]
 
-### Exersise 1: Basic setup
+### Exercise 1: Basic setup
 
 #### Readme (Thursday)
 [Fork this repo][repo]
