@@ -34,10 +34,9 @@ Goal: Store, manipulate and share data between server-client
 
 Goal: Handle data sharing and life cycle of the app 
 
-<!--
-[Excercises](...)  
-[Slides](...)
--->
+[Excercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-3.md)  
+[Slides](https://docs.google.com/presentation/d/1SHofRYg87bhdqhv7DQb_HZMbW7Iq1PtqxpdtZHMbMmk/edit?usp=sharing)
+
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
