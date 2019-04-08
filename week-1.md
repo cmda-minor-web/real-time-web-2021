@@ -24,7 +24,7 @@ This week you’re going to recreate [this basic chat app][socket.io chat] with 
 Maybe you already have a preferred code-style, maybe you want to try something else.
 Set up at least an [npm script][npm], and probably also some integration with your editor. Use Nodemon or similar to allow instant reloading while developing.
 
-*Resources:* [xo][x0], [standard][standard], [prettier][prettier], [eslint][eslint]
+*Resources:* [xo], [standard][standard], [prettier][prettier], [eslint][eslint]
 
 #### Server (Thursday)
 Set-up Express (or similar) for static file serving / templating
@@ -50,7 +50,7 @@ Extra challenge: Instead of socket.io, use the native [server-sent-events]https:
 ### Excercise 3: Deploy your app
 Get your app running on the web! Put a link to your live demo at the top of your readme. Include a screenshot in the repo showing of the unique feature you built.
 
-**Resources:** now, heroku, digitalocean.
+**Resources:** [now], [heroku], [digitalocean].
 **Note:** Don’t 😱 if this doesn’t work out this week: there’s plenty time to do it in week 2 or week 3. But it may be advantageous if you get around to deploying now
 
 
@@ -71,4 +71,8 @@ Get your app running on the web! Put a link to your live demo at the top of your
 [example razpudding]: https://github.com/Razpudding/socketio-chat-app
 [get started]:https://socket.io/get-started/chat/
 [sse]:https://www.voorhoede.nl/en/blog/real-time-communication-with-server-sent-events/
+[now]:https://zeit.co/now
+[heroku]:https://www.heroku.com/
+[digitalocean]:https://www.digitalocean.com/
+
 
