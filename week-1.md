@@ -24,12 +24,12 @@ This week you’re going to recreate [this basic chat app][socket.io chat] with 
 Maybe you already have a preferred code-style, maybe you want to try something else.
 Set up at least an [npm script][npm], and probably also some integration with your editor. Use Nodemon or similar to allow instant reloading while developing.
 
-*Resources:* [xo], [standard][standard], [prettier][prettier], [eslint][eslint]
+*Resources:* [xo], [standard], [prettier], [eslint]
 
 #### Server (Thursday)
 Set-up Express (or similar) for static file serving / templating
 
-**Resources:** [express api][express api]
+**Resources:** [express api]
 
 ### Excercise 2: A unique chat app 
 
@@ -43,7 +43,7 @@ Examples that are unique: Using D3 to structure texts into svg art, using words 
 
 Think of something that matches your skill level. If you have trouble understanding the basics of socket.io, focus on the basics (and talk to us if you need help).
 
-Extra challenge: Instead of socket.io, use the native [server-sent-events]https://www.voorhoede.nl/en/blog/real-time-communication-with-server-sent-events/! It works very well although sending messages from client to server is trickier.
+Extra challenge: Instead of socket.io, use the native [server-sent-events][sse]! It works very well although sending messages from client to server is trickier.
 
 **Resources:** [socket.io]
 
