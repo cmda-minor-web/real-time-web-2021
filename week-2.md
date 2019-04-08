@@ -15,7 +15,7 @@ Last week you built a basic socket web app. This week you’re going to take it 
 
 ## Exercises
 1. [Pick a real-time source][exercise1]
-2. [Reflect data][exercise2]
+2. [Reflect data in the frontend][exercise2]
 3. [Hook up a database][exercise3]
 4. [Test your app][exercise4]
 
@@ -26,7 +26,7 @@ Pick a real-time source and define what you want to do. We did most of the resea
 **Examples:** [slack], [github], [twitter], [npm] 
 
 
-### Exercise 2: Reflect data
+### Exercise 2: Reflect data in the frontend
 Reflect some of the data from the external source in a frontend view.
 
 **Resources:** socket.io, d3.
