@@ -17,7 +17,7 @@ Last week you built a basic socket web app. This week you’re going to take it 
 1. [Pick a real-time source][excercise1]
 2. [Reflect data][excercise2]
 3. [Hook up a database][excercise3]
-4. [Test your app]
+4. [Test your app][excercise4]
 
 ### Excersise 1: Pick a real-time source
 
