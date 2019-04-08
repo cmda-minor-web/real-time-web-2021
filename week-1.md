@@ -50,7 +50,7 @@ Extra challenge: Instead of socket.io, use the native [server-sent-events][sse]!
 ### Excercise 3: Deploy your app
 Get your app running on the web! Put a link to your live demo at the top of your readme. Include a screenshot in the repo showing of the unique feature you built.
 
-**Resources:** [now], [heroku], [digitalocean].
+**Resources:** [now], [heroku], [digitalocean].  
 **Note:** Don’t 😱 if this doesn’t work out this week: there’s plenty time to do it in week 2 or week 3. But it may be advantageous if you get around to deploying now
 
 
