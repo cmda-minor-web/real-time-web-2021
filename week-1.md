@@ -6,12 +6,12 @@ Real-Time Web - Minor Web Development
 After all you learned so far, you now will learn how to build real-time applications, and rule the world!
 
 
-## Excercises
-1. [Basic setup][excercise1]
-2. [A unique chat app ][excercise2]
-3. [Deploy your app][excercise3]
+## Exercises
+1. [Basic setup][exercise1]
+2. [A unique chat app ][exercise2]
+3. [Deploy your app][exercise3]
 
-### Excersise 1: Basic setup
+### Exersise 1: Basic setup
 
 #### Readme (Thursday)
 [Fork this repo][repo]
@@ -31,7 +31,7 @@ Set-up Express (or similar) for static file serving / templating
 
 **Resources:** [express api]
 
-### Excercise 2: A unique chat app 
+### Exercise 2: A unique chat app 
 
 Set-up socket.io. Create a basic real-time app using sockets. Bare minimum is a successful message from client to server and from server to client (“round trip”) as well as one additional chat feature YOU HAVE COME UP WITH. Here is an [example][example razpudding] I made that slowly fades out words commonly used by the people writing the chat messages forcing them to use new words.
 Creating a unique feature often means storing some information about users serverside in-memory. Ask us if you have any questions about how to achieve that.
@@ -47,16 +47,16 @@ Extra challenge: Instead of socket.io, use the native [server-sent-events][sse]!
 
 **Resources:** [socket.io]
 
-### Excercise 3: Deploy your app
+### Exercise 3: Deploy your app
 Get your app running on the web! Put a link to your live demo at the top of your readme. Include a screenshot in the repo showing of the unique feature you built.
 
 **Resources:** [now], [heroku], [digitalocean].  
 **Note:** Don’t 😱 if this doesn’t work out this week: there’s plenty time to do it in week 2 or week 3. But it may be advantageous if you get around to deploying now
 
 
-[excercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#excersise-1-basic-setup 
-[excercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#excercise-2-a-unique-chat-app 
-[excercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#excercise-3-deploy-your-app
+[exercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#exersise-1-basic-setup 
+[exercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#exercise-2-a-unique-chat-app 
+[exercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#exercise-3-deploy-your-app
 [repo]:https://github.com/cmda-minor-web/real-time-web-1819
 [socket.io]:https://socket.io/
 [socket.io chat]:https://socket.io/demos/chat/
