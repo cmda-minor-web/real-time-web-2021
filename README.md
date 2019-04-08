@@ -24,10 +24,10 @@ Goal: Build and deploy an unique barebone real-time app
 ### Week 2 - Sharing is caring  
 
 Goal: Store, manipulate and share data between server-client   
-<!--
-[Excercises]()    
-[Slides]()
--->
+
+[Excercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md)    
+[Slides](https://docs.google.com/presentation/d/1woKoY59D8Zcttna0FzfNjEtGtT8oXWi9b5LYlukRISM/edit?usp=sharing)
+
 
 
 ### Week 3 - Let’s take this show on the road 
