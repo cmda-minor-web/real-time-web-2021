@@ -46,7 +46,7 @@ Make sure your app works with at least three people connected (preferably more) 
 [excercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-3-hook-up-database
 [excercise4]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-4-test-your-app
 [slack]:https://api.slack.com/rtm
-[github.io]:https://developer.github.com/v3/
+[github]:https://developer.github.com/v3/
 [twitter]:https://developer.twitter.com/en/docs
 [npm]:https://github.com/npm/registry-follower-tutorial
 [socket.io]:https://socket.io/
@@ -58,6 +58,4 @@ Make sure your app works with at least three people connected (preferably more) 
 [array]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [string]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 [object]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-
-
 
