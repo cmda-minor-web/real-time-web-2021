@@ -17,7 +17,7 @@ During this course you will learn how to build a real-time / live application. Y
 
 Goal: Build and deploy an unique barebone real-time app  
 
-[Excercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md)    
+[Exercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md)    
 [Slides](https://docs.google.com/presentation/d/1EVsEFgBnG699nce058ss_PkVJROQXDp5wJJ-IRXvzTA/edit?usp=sharing)  
 
 
@@ -25,7 +25,7 @@ Goal: Build and deploy an unique barebone real-time app
 
 Goal: Store, manipulate and share data between server-client   
 
-[Excercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md)    
+[Exercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md)    
 [Slides](https://docs.google.com/presentation/d/1woKoY59D8Zcttna0FzfNjEtGtT8oXWi9b5LYlukRISM/edit?usp=sharing)
 
 
@@ -34,7 +34,7 @@ Goal: Store, manipulate and share data between server-client
 
 Goal: Handle data sharing and life cycle of the app 
 
-[Excercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-3.md)  
+[Exercises](https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-3.md)  
 [Slides](https://docs.google.com/presentation/d/1SHofRYg87bhdqhv7DQb_HZMbW7Iq1PtqxpdtZHMbMmk/edit?usp=sharing)
 
 
