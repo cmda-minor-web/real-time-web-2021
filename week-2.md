@@ -7,8 +7,8 @@ Last week you built a basic socket web app. This week you’re going to take it 
 
 ### Result
 * Learn how to consume an external data source 
-* Store data in a database
 * Reflect data in your frontend
+* Store data in a database
 * Show off your unique work 🤩
 
 
