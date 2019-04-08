@@ -15,7 +15,7 @@ After all you learned so far, you now will learn how to build real-time applicat
 
 #### Readme (Thursday)
 [Fork this repo][repo]
-This week you’re going to recreate [this basic chat app][socket.io] with the addition of at least one new feature. Write down what your project’s all about in the readme of the project. Next week you’ll start a new project so a basic readme for this week will do.
+This week you’re going to recreate [this basic chat app][socket.io chat] with the addition of at least one new feature. Write down what your project’s all about in the readme of the project. Next week you’ll start a new project so a basic readme for this week will do.
 
 *Resources:* [readme driven development][rdd], [mastering markdown][markdown]
 *Note:* keep the docs up-to-date while working on your project.
@@ -58,7 +58,8 @@ Get your app running on the web! Put a link to your live demo at the top of your
 [excercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#excercise-2-a-unique-chat-app 
 [excercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-1.md#excercise-3-deploy-your-app
 [repo]:https://github.com/cmda-minor-web/real-time-web-1819
-[socket.io]:https://socket.io/demos/chat/
+[socket.io]:https://socket.io/
+[socket.io chat]:https://socket.io/demos/chat/
 [npm]:https://docs.npmjs.com/cli/run-script
 [rdd]:http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 [markdown]:https://guides.github.com/features/mastering-markdown/
