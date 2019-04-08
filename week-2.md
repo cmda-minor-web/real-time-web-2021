@@ -41,10 +41,10 @@ You probably want to persist data in a database (“tunnel event”, initial loa
 
 Make sure your app works with at least three people connected (preferably more) at the same time. They will probably need different parts of your database so you will need to set up some server-side functionality that serves a specific part of your database depending on the type or request a clients sends. These types of requests like “getLatestData” or “sendMessage” form the basis of the API of YOUR server. think about which methods/events your server will have/allow and describe them in your readme. It’s OK if not all methods work yet but try to plan ahead.
 
-[excercise1]:...
-[excercise2]:...
-[excercise3]:...
-[excercise4]:...
+[excercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excersise-1-pick-a-real-time-source
+[excercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-2-reflect-data
+[excercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-3-hook-up-database
+[excercise4]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-4-test-your-app
 [slack]:https://api.slack.com/rtm
 [github.io]:https://developer.github.com/v3/
 [twitter]:https://developer.twitter.com/en/docs
