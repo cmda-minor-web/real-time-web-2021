@@ -37,14 +37,15 @@ Set-up socket.io. Create a basic real-time app using sockets. Bare minimum is a 
 Creating a unique feature often means storing some information about users serverside in-memory. Ask us if you have any questions about how to achieve that.
 
 [Examples that are not unique][get started]: Storing nicknames, showing who’s online or any of the other feature requests listed at the bottom of the socket.io tutorial.
+
 Examples that are unique: Using D3 to structure texts into svg art, using words to fight each other in a text based game, additional features you can earn if you stay in chat long enough.
-It doesn’t even have to be a chat app, just use the socket.io framework.
+**It doesn’t even have to be a chat app, just use the socket.io framework.**
 
 Think of something that matches your skill level. If you have trouble understanding the basics of socket.io, focus on the basics (and talk to us if you need help).
 
-Extra challenge: Instead of socket.io, use the native server-sent-events! It works very well although sending messages from client to server is trickier.
+Extra challenge: Instead of socket.io, use the native [server-sent-events]https://www.voorhoede.nl/en/blog/real-time-communication-with-server-sent-events/! It works very well although sending messages from client to server is trickier.
 
-**Resources:** socket.io
+**Resources:** [socket.io]
 
 ### Excercise 3: Deploy your app
 Get your app running on the web! Put a link to your live demo at the top of your readme. Include a screenshot in the repo showing of the unique feature you built.
@@ -68,4 +69,5 @@ Get your app running on the web! Put a link to your live demo at the top of your
 [express api]:https://expressjs.com/en/4x/api.html
 [example razpudding]: https://github.com/Razpudding/socketio-chat-app
 [get started]:https://socket.io/get-started/chat/
+[sse]:https://www.voorhoede.nl/en/blog/real-time-communication-with-server-sent-events/
 
