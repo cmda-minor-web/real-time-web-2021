@@ -1,4 +1,4 @@
-# Excercises Week 3
+# Exercises Week 3
 Real-Time Web - Minor Web Development 
 
 ## Intention
@@ -6,37 +6,37 @@ Real-Time Web - Minor Web Development
 ...
 
 ## Excercises
-1. [...][excercise1]
-2. [...][excercise2]
-3. [...][excercise3]
-4. [p][excercise4]
+1. [...][exercise1]
+2. [...][exercise2]
+3. [...][exercise3]
+4. [...][exercise4]
 
-### Excersise 1: ...
-
-...
-
-**Resources:**...
-
-
-### Excercise 2: ...
+### Exersise 1: ...
 
 ...
 
 **Resources:**...
 
-### Excercise 3:...
+
+### Exercise 2: ...
+
+...
+
+**Resources:**...
+
+### Exercise 3:...
 
 ...
 
 **Resources:** 
 
-### Excercise 4: ...
+### Exercise 4: ...
 
 
-[excercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excersise-1-pick-a-real-time-source
-[excercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-2-reflect-data
-[excercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-3-hook-up-database
-[excercise4]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#excercise-4-test-your-app
+[exercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exersise-1-pick-a-real-time-source
+[exercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-2-reflect-data
+[exercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-3-hook-up-database
+[exercise4]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-4-test-your-app
 [slack]:https://api.slack.com/rtm
 [github]:https://developer.github.com/v3/
 [twitter]:https://developer.twitter.com/en/docs
