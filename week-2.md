@@ -34,7 +34,7 @@ Reflect some of the data from the external source in a frontend view.
 ### Excercise 3: Hook up database
 You probably want to persist data in a database (“tunnel event”, initial load, etc.) so set up some of way of storing the data. If you want to start out simple, store the data in-memory first and then move it to a database. Describe the chosen database system in the project. Make sure you only store the data you NEED for your application. This almost always involves cleaning and restructuring the data.
 
-**Resources for databases:** [levelup], [mongo], [redis], [postgres].
+**Resources for databases:** [levelup], [mongo], [redis], [postgres]  
 **Resources for cleaning data:** [array], [string], [object]
 
 ### Excercise 4: Test your app
