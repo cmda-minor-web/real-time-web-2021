@@ -6,43 +6,23 @@ Real-Time Web - Minor Web Development
 ...
 
 ## Excercises
-1. [...][exercise1]
-2. [...][exercise2]
-3. [...][exercise3]
-4. [...][exercise4]
+1. [Hook up a database][exercise1]
+2. [Test your app][exercise2]
 
-### Exersise 1: ...
-
-...
-
-**Resources:**...
-
-
-### Exercise 2: ...
-
-...
-
-**Resources:**...
-
-### Exercise 3:...
-
-...
+### Exercise 1: Hook up a database
+You probably want to persist data in a database (“tunnel event”, initial load, etc.) so set up some of way of storing the data. If you want to start out simple, store the data in-memory first (like an array of data items) and move it to a database later. Describe the chosen database system in the project's readme. Make sure you only store the data you NEED for your application. This almost always involves cleaning and restructuring the data. For instance,if you get back a complex object with confusing property names, use map,filter,reduce to change the data to your own format. 
 
 **Resources:** 
+* Databases: [levelup], [mongo], [redis], [postgres]  
+* Cleaning data: [array], [string], [object]
 
-### Exercise 4: ...
+### Exercise 2: Test your app
+
+Make sure your app works with at least three people connected (preferably more) at the same time. They will probably need different parts of your database so you will need to set up some server-side functionality that serves a specific part of your database depending on the type or request a clients sends. These types of requests like “getLatestData” or “sendMessage” form the basis of the API of YOUR server. think about which methods/events your server will have/allow and describe them in your readme. It’s OK if not all methods work yet but try to plan ahead.
 
 
 [exercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exersise-1-pick-a-real-time-source
 [exercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-2-reflect-data
-[exercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-3-hook-up-database
-[exercise4]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-4-test-your-app
-[slack]:https://api.slack.com/rtm
-[github]:https://developer.github.com/v3/
-[twitter]:https://developer.twitter.com/en/docs
-[npm]:https://github.com/npm/registry-follower-tutorial
-[socket.io]:https://socket.io/
-[d3]:https://d3js.org/
 [levelup]:https://github.com/level/levelup
 [mongo]:https://www.npmjs.com/package/mongodb
 [redis]:https://github.com/NodeRedis/node_redis
