@@ -3,7 +3,7 @@ Real-Time Web - Minor Web Development
 
 ## Intention
 
-Last week you built a basic socket web app. The purpose was to learn about real-time communication using websockets. This week you’re going to take it to the next level and build a **meaningful** webapp that consumes an external source. You learn how to store and serve data from an external source to your own clients. We'll work on this app for the last two weeks of the course.
+Last week you built a basic socket web app. The purpose was to learn about real-time communication using websockets. This week you’re going to take it to the next level and build a **meaningful** webapp that consumes an external source. 
 
 ### Result
 * Learn how to consume an external data source 
@@ -12,7 +12,7 @@ Last week you built a basic socket web app. The purpose was to learn about real-
 * Show off your unique work 🤩
 
 ## Exercises
-1. [Pick a real-time source][exercise1]
+1. [Come up with a concept and data][exercise1]
 2. [Reflect data in the frontend][exercise2]
 
 ### Exersise 1: Come up with a concept and data
