@@ -3,7 +3,6 @@ Real-Time Web - Minor Web Development
 
 ## Intention
 
-...
 
 ## Excercises
 1. [Hook up a database][exercise1]
