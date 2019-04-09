@@ -14,8 +14,6 @@ Last week you built a basic socket web app. The purpose was to learn about real-
 ## Exercises
 1. [Pick a real-time source][exercise1]
 2. [Reflect data in the frontend][exercise2]
-3. [Hook up a database][exercise3]
-4. [Test your app][exercise4]
 
 ### Exersise 1: Come up with a concept and data
 You can start either by thinking of a useful real-time application and then finding a matching API; or by looking at existing real-time APIs and finding meaningful real-time uses for them.
@@ -36,27 +34,14 @@ Reflect some of the data from the external source in a frontend view. The first 
 
 Now that you have a one way trip (external source -> your server -> frontend) set up, you can work on a way for your user to change the data on the server using sockets.
 
-**Resources:** socket.io, d3.js
+**Resources:** [socket.io], [d3]
 
 [exercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exersise-1-pick-a-real-time-source
 [exercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-2-reflect-data
-[exercise3]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-3-hook-up-database
-[exercise4]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-4-test-your-app
 [slack]:https://api.slack.com/rtm
 [github]:https://developer.github.com/v3/
 [twitter]:https://developer.twitter.com/en/docs
 [npm]:https://github.com/npm/registry-follower-tutorial
 [socket.io]:https://socket.io/
 [d3]:https://d3js.org/
-[levelup]:https://github.com/level/levelup
-[mongo]:https://www.npmjs.com/package/mongodb
-[redis]:https://github.com/NodeRedis/node_redis
-[postgres]:https://github.com/brianc/node-postgres
-[array]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-[string]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
-[object]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-[list]:https://docs.google.com/spreadsheets/d/1z4vKoXES_m3NhUJfIn8vpjQLrbTfRQLv2IFu9PoWEDI/edit#gid=0
-[trash]:https://api.data.amsterdam.nl/afval/
-[trashtag]:https://twitter.com/search?q=%23trashtag&src=typd
-[drawing]:https://live-draw.herokuapp.com/
-[game]:https://github.com/meesrutten/real-time-web
+
