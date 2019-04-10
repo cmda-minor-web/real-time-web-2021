@@ -44,4 +44,9 @@ Now that you have a one way trip (external source -> your server -> frontend) se
 [npm]:https://github.com/npm/registry-follower-tutorial
 [socket.io]:https://socket.io/
 [d3]:https://d3js.org/
+[list]:https://docs.google.com/spreadsheets/d/1z4vKoXES_m3NhUJfIn8vpjQLrbTfRQLv2IFu9PoWEDI/edit#gid=0
+[trash]:https://api.data.amsterdam.nl/afval/
+[trashtag]:https://twitter.com/search?q=%23trashtag&src=typd
+[drawing]:https://live-draw.herokuapp.com/
+[game]:https://github.com/meesrutten/real-time-web
 
