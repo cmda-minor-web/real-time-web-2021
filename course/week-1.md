@@ -13,20 +13,20 @@ After all you learned so far, you now will learn how to build real-time applicat
 
 ### Exercise 1: Basic setup
 
-#### Readme (Thursday)
+#### Readme
 [Fork this repo][repo]
 This week you’re going to recreate [this basic chat app][socket.io chat] with the addition of at least one new feature. Write down what your project’s all about in the readme of the project. Next week you’ll start a new project so a basic readme for this week will do.
 
 *Resources:* [readme driven development][rdd], [mastering markdown][markdown]
 *Note:* keep the docs up-to-date while working on your project.
 
-#### Style (Thursday) 
+#### Style
 Maybe you already have a preferred code-style, maybe you want to try something else.
 Set up at least an [npm script][npm], and probably also some integration with your editor. Use Nodemon or similar to allow instant reloading while developing.
 
 *Resources:* [xo], [standard], [prettier], [eslint]
 
-#### Server (Thursday)
+#### Server
 Set-up Express (or similar) for static file serving / templating
 
 **Resources:** [express api]
@@ -42,6 +42,8 @@ Examples that are unique: Using D3 to structure texts into svg art, using words 
 **It doesn’t even have to be a chat app, just use the socket.io framework.**
 
 Think of something that matches your skill level. If you have trouble understanding the basics of socket.io, focus on the basics (and talk to us if you need help).
+
+Extra challenge: Start working on the final app. [Look at the exercises from week 2](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/week-2.md), pick an API and think of a strong concept. Start working on that instead of a barebone app.
 
 Extra challenge: Instead of socket.io, use the native [server-sent-events][sse]! It works very well although sending messages from client to server is trickier.
 

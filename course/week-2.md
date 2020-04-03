@@ -16,7 +16,7 @@ Last week you built a basic socket web app. The purpose was to learn about real-
 2. [Reflect data in the frontend][exercise2]
 
 ### Exersise 1: Come up with a concept and data
-You can start either by thinking of a useful real-time application and then finding a matching API; or by looking at existing real-time APIs and finding meaningful real-time uses for them.
+You can start either by thinking of a useful real-time application and then finding a matching API; or by looking at existing real-time APIs and finding meaningful real-time uses for them. [Here's a list of some real-time APIs](https://docs.google.com/spreadsheets/d/1YKMTvdWVbzJ-CXDCHBEH2n3KofcQTN7EerTOEXy9MHI/edit?usp=sharing). Let me know if you want to add any and I'll make you a collaborator.
 You could, for instance, use an API that tracks the number of crypto currency transactions globally and estimate their CO2 impact (per currency, per transaction).
 Or, you might use Amsterdam's [real-time open trash API][trash] to figure out which neighbourhoods produce the most (plastic) trash.
 You could even track a trend on twitter to show the status of an important development like the recent [#trashtag event][trashtag]
