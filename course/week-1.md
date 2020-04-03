@@ -1,5 +1,4 @@
 # Excercises Week 1
-Real-Time Web - Minor Web Development 
 
 ## Intention
 
@@ -29,7 +28,7 @@ Set up at least an [npm script][npm], and probably also some integration with yo
 #### Server
 Set-up Express (or similar) for static file serving / templating
 
-**Resources:** [express api]
+*Resources:* [express api]
 
 ### Exercise 2: A unique chat app 
 
@@ -47,12 +46,12 @@ Extra challenge: Start working on the final app. [Look at the exercises from wee
 
 Extra challenge: Instead of socket.io, use the native [server-sent-events][sse]! It works very well although sending messages from client to server is trickier.
 
-**Resources:** [socket.io]
+*Resources: [socket.io]
 
 ### Exercise 3: Deploy your app
 Get your app running on the web! Put a link to your live demo at the top of your readme. Include a screenshot in the repo showing of the unique feature you built.
 
-**Resources:** [now], [heroku], [digitalocean].  
+Resources:* [now], [heroku], [digitalocean].  
 **Note:** Don’t 😱 if this doesn’t work out this week: there’s plenty time to do it in week 2 or week 3. But it may be advantageous if you get around to deploying now
 
 

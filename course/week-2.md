@@ -1,5 +1,4 @@
 # Exercises Week 2
-Real-Time Web - Minor Web Development 
 
 ## Intention
 
@@ -34,7 +33,7 @@ Reflect some of the data from the external source in a frontend view. The first 
 
 Now that you have a one way trip (external source -> your server -> frontend) set up, you can work on a way for your user to change the data on the server using sockets.
 
-**Resources:** [socket.io], [d3]
+*Resources:* [socket.io], [d3]
 
 [exercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exersise-1-pick-a-real-time-source
 [exercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-2-reflect-data

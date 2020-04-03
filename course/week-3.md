@@ -1,5 +1,4 @@
 # Exercises Week 3
-Real-Time Web - Minor Web Development 
 
 ## Intention
 
@@ -12,7 +11,7 @@ The first week you built a basic socket web app. The purpose was to learn about 
 ### Exercise 1: Hook up a database
 You probably want to persist data in a database (“tunnel event”, initial load, etc.) so set up some of way of storing the data. If you want to start out simple, store the data in-memory first (like an array of data items) and move it to a database later. Describe the chosen database system in the project's readme. Make sure you only store the data you NEED for your application. This almost always involves cleaning and restructuring the data. For instance,if you get back a complex object with confusing property names, use map,filter,reduce to change the data to your own format. 
 
-**Resources:** 
+*Resources:*
 * Databases: [levelup], [mongo], [redis], [postgres]  
 * Cleaning data: [array], [string], [object]
 
