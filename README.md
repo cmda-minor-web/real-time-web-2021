@@ -17,7 +17,7 @@ During this course you will learn how to build a **meaningful** real-time applic
 Goal: Build and deploy a unique barebone real-time app  
 
 [Exercises](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/week-1.md)    
-[Slides](https://docs.google.com/presentation/d/1EVsEFgBnG699nce058ss_PkVJROQXDp5wJJ-IRXvzTA/edit?usp=sharing)  
+[Slides](https://docs.google.com/presentation/d/1Q_2EpEnW53G-DiRYtfp1VRYHdLJYJ7bjoLxAWhGbW-0/edit?usp=sharing)  
 
 
 ### Week 2 - Sharing is caring  
@@ -25,7 +25,7 @@ Goal: Build and deploy a unique barebone real-time app
 Goal: Store, manipulate and share data between server-client   
 
 [Exercises](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/week-2.md)    
-[Slides](https://docs.google.com/presentation/d/1woKoY59D8Zcttna0FzfNjEtGtT8oXWi9b5LYlukRISM/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1p_P-rciWJQ2BMgveOYNTcwEJHh1yxB1-HqKZhiD8kkk/edit?usp=sharing)
 
 
 ### Week 3 - Let’s take this show on the road 
@@ -33,7 +33,7 @@ Goal: Store, manipulate and share data between server-client
 Goal: Handle data sharing and multi-user support 
 
 [Exercises](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/week-3.md)  
-[Slides](https://docs.google.com/presentation/d/1SHofRYg87bhdqhv7DQb_HZMbW7Iq1PtqxpdtZHMbMmk/edit?usp=sharing)
+[Slides](https://drive.google.com/open?id=19GE6r1jha3gX-uhQI0NIv09klTT45BihuELqZSEa2_8)
 
 > If you're seeing this message on a forked repo, it means one of our students hasn't changed the description yet 😈
 
