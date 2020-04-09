@@ -46,7 +46,7 @@ Aks Robin and Maikel for help if needed
 16.00 - Guido, Laurens, Maikel, Robin
 Stand-up
 
-Friday 10 April (goede vrijdag)
+#### Friday 10 April (goede vrijdag)
 10.30 - Guido, Laurens
 * Check up talk, (10 min)
 
