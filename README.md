@@ -104,10 +104,10 @@ Goal: Handle data sharing and multi-user support
 ### Week 4
 
 #### Wednesday 6 May
+* Privacy discussion
+
 Robin, Maikel
 * Optional code review
-
-* Privacy discussion
 
 #### Thursday 7 May
 • assessments
