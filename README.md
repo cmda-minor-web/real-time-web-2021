@@ -41,7 +41,7 @@ Stand-up
 
 10.30 - Robin, Maikel
 * Continue working on product
-Aks Robin and Maikel for help if needed
+Ask Robin and Maikel for help if needed
 
 16.00 - Guido, Laurens, Maikel, Robin
 Stand-up
@@ -67,7 +67,7 @@ Goal: Store, manipulate and share data between server-client
 
 11:00 - Robin, Maikel
 * Continue working on product
-Aks Robin and Maikel for help if needed
+Ask Robin and Maikel for help if needed
 
 16:00 - Laurens, Guido, Maikel Robin
 Stand-up
@@ -100,6 +100,20 @@ Goal: Handle data sharing and multi-user support
 9.30 - Laurens, Guido
 * Events
 * Peer reviews
+
+### Week 4
+
+#### Wednesday 6 May
+Robin, Maikel
+* Optional code review
+
+* Privacy discussion
+
+#### Thursday 7 May
+• assessments
+
+#### Friday 8 May
+• assessments
 
 ## Schema
 
