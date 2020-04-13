@@ -2,17 +2,13 @@
 
 ## Intention
 
-Last week you built a basic socket web app. The purpose was to learn about real-time communication using websockets. This week you’re going to take it to the next level and build a **meaningful** webapp that consumes an external source. you will learn how to store and serve data from an external source to your own clients. We'll work on this app for the last two weeks of the course.
+Last week you built a basic socket web app. The purpose was to learn about real-time communication using websockets. This week you’re going to take it to the next level and build a **meaningful** webapp that consumes an external source. 
+This week we will focus on client-server communication and data management
 
 ### Result
 * Learn how to consume an external data source 
 * Reflect data in your frontend
-* Store data in a database
 * Show off your unique work 🤩
-
-## Exercises
-1. [Come up with a concept and data][exercise1]
-2. [Reflect data in the frontend][exercise2]
 
 ### Exersise 1: Come up with a concept and data
 You can start either by thinking of a useful real-time application and then finding a matching API; or by looking at existing real-time APIs and finding meaningful real-time uses for them. [Here's a list of some real-time APIs](https://docs.google.com/spreadsheets/d/1YKMTvdWVbzJ-CXDCHBEH2n3KofcQTN7EerTOEXy9MHI/edit?usp=sharing). Let me know if you want to add any and I'll make you a collaborator.
@@ -35,15 +31,21 @@ Now that you have a one way trip (external source -> your server -> frontend) se
 
 *Resources:* [socket.io], [d3]
 
-[exercise1]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exersise-1-pick-a-real-time-source
-[exercise2]:https://github.com/cmda-minor-web/real-time-web-1819/blob/master/week-2.md#exercise-2-reflect-data
+### Extra challenges:
+If you're certain you can meet the baseline for this course as per the rubric, these are good challenges to add:
+
+- Security (validate user requests server side)
+- Mix different communication methods (SSE, XHR/Fetch, Sockets, Long Polling)
+- Offline Support (what happens when the source is unavailable, what happens when the client temporarily loses their connection to your server?)
+- Add publication subscription model too elegantly keep clients up to date
+
+
 [slack]:https://api.slack.com/rtm
 [github]:https://developer.github.com/v3/
 [twitter]:https://developer.twitter.com/en/docs
 [npm]:https://github.com/npm/registry-follower-tutorial
 [socket.io]:https://socket.io/
 [d3]:https://d3js.org/
-[list]:https://docs.google.com/spreadsheets/d/1z4vKoXES_m3NhUJfIn8vpjQLrbTfRQLv2IFu9PoWEDI/edit#gid=0
 [trash]:https://api.data.amsterdam.nl/afval/
 [trashtag]:https://twitter.com/search?q=%23trashtag&src=typd
 [drawing]:https://live-draw.herokuapp.com/
