@@ -38,6 +38,7 @@ If you're certain you can meet the baseline for this course as per the rubric, t
 - Mix different communication methods (SSE, XHR/Fetch, Sockets, Long Polling)
 - Offline Support (what happens when the source is unavailable, what happens when the client temporarily loses their connection to your server?)
 - Add publication subscription model too elegantly keep clients up to date
+- Don't use socket.io for client server communication but try the native implementation instead. Ask Bas for pointers!
 
 
 [slack]:https://api.slack.com/rtm
