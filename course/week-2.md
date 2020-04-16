@@ -31,6 +31,20 @@ Now that you have a one way trip (external source -> your server -> frontend) se
 
 *Resources:* [socket.io], [d3]
 
+### Exercise 3: Draw a Data Life Cycle Diagram
+What data lives in your app universe?
+What are the entry points of data in your app?
+Where can the data be manipulated from?
+If you want to answer these questions, making a data life cycle diagram can help. Check out [the slides](https://docs.google.com/presentation/d/1YcVYtLqdA66Wo--VtW7bGDcfk63k7TgSIrQg1IFWDdk/edit?usp=sharing) if you need more info and then follow these steps.
+
+- Draw each of the major components of your app (usual suspects: client, your server, external resource server)
+- Write under each component what’s inside its data model
+- Add lines for different pieces of data shared between components
+- Add information to your diagram showing the methods for getting and exposing data (e.g. pub-sub, request over socket, OAuth authorization, input validation)
+- Put it in your readme. WE WILL CHECK IT DURING THE ORAL EXAM
+- (Replace the sketch with a proper visualization)
+
+
 ### Extra challenges:
 If you're certain you can meet the baseline for this course as per the rubric, these are good challenges to add:
 
