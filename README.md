@@ -103,6 +103,8 @@ Goal: Handle data sharing and multi-user support
 
 ### Week 4
 
+[Exercises](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/week-4.md)  
+
 #### Wednesday 6 May
 * Privacy discussion
 
