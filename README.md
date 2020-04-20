@@ -73,11 +73,12 @@ Ask Robin and Maikel for help if needed
 Stand-up
 
 #### Friday 17 April
-9.30 - Guido
+9.30 - Guido, Laurens
 
 * Live coding
 * Data management explained
 * Socket broadcast functions
+* [Data Life Cycle diagram](https://docs.google.com/presentation/d/1YcVYtLqdA66Wo--VtW7bGDcfk63k7TgSIrQg1IFWDdk/edit?usp=sharing)
 
 10.30 - Laurens, Guido
 * Progress talk, (10 min)
@@ -93,13 +94,13 @@ Goal: Handle data sharing and multi-user support
 9.30 - Guido
 * Storing data
 * Caching
-* Security (OAuth)
+* Security
 * Sessions
 
 #### Tuesday 21 April
 9.30 - Laurens, Guido
-* Events
-* Peer reviews
+* [OAuth](https://docs.google.com/presentation/d/1TDArdo3w8pIQbpGK9ASKabLpYfqnHL2gAkiAOZHgHBA/edit?usp=sharing)
+* [Peer reviews](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/peer-review.md)
 
 ### Week 4
 
