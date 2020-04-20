@@ -7,7 +7,7 @@
 
 ## Preparation
 - Push the latest changes to your readme, code, and wiki
-- [Read the rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTC69BUOGNQj_bLQE9LiprKGYChzb4LOoROoUiLUP8DReOcFLqS5k90Wu1LK9L5r1IVq7BDA1qISp5u/pubhtml)
+- [Read the rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjLC7HzQngsRCmkxTGWvKkkH1JuA5KivKdky_9dzr1zzghARw4-ldQW_tWO3zpxT7ZQC7SpiUa0q2z/pubhtml?gid=0&single=true)
 - PM your peer on Slack. Peers are number 1 & 2 in and number 3 & 4 in [this sheet](https://docs.google.com/spreadsheets/d/1xCoCAt1HcCSeiww15oz-m1B8g2GaE8pcRMeyQVaSVzA/edit?usp=sharing)
 - Start a jitsi call with your buddy by typing /jitsi if you're number 1 or 3.
 
