@@ -107,8 +107,11 @@ Goal: Handle data sharing and multi-user support
 
 #### Wednesday 6 May
 9.30: Deadline for your final commit
+
 9.30: Web Design shizzle
+
 14.00: Privacy discussion in groups
+
 This part is optional but I promise it will be good.
 
 #### Thursday 7 May
@@ -116,7 +119,9 @@ This part is optional but I promise it will be good.
 
 #### Friday 8 May
 9.30: Assessments
+
 15.00?: Virtual drinks!
+
 I was thinking of trying out [Mozilla Hubs](https://hubs.mozilla.com/#/) for this :)
 
 
