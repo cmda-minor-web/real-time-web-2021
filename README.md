@@ -61,7 +61,6 @@ Goal: Store, manipulate and share data between server-client
 9.30 - Laurens, Guido
 * Feedback of last week
 * How does the rubric work?
-* Create a data flow in couples
 * Data management explained
 * Questions
 
@@ -107,16 +106,19 @@ Goal: Handle data sharing and multi-user support
 [Exercises](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/week-4.md)  
 
 #### Wednesday 6 May
-* Privacy discussion
-
-Robin, Maikel
-* Optional code review
+9.30: Deadline for your final commit
+9.30: Web Design shizzle
+14.00: Privacy discussion in groups
+This part is optional but I promise it will be good.
 
 #### Thursday 7 May
-• assessments
+9.30: Assessments 
 
 #### Friday 8 May
-• assessments
+9.30: Assessments
+15.00?: Virtual drinks!
+I was thinking of trying out [Mozilla Hubs](https://hubs.mozilla.com/#/) for this :)
+
 
 ## Schema
 
