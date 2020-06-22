@@ -35,7 +35,7 @@ Now that you have a one way trip (external source -> your server -> frontend) se
 What data lives in your app universe?
 What are the entry points of data in your app?
 Where can the data be manipulated from?
-If you want to answer these questions, making a data life cycle diagram can help. Check out [the slides](https://docs.google.com/presentation/d/1YcVYtLqdA66Wo--VtW7bGDcfk63k7TgSIrQg1IFWDdk/edit?usp=sharing) if you need more info and then follow these steps.
+If you want to answer these questions, making a data life cycle diagram can help. Check out [the slides](https://docs.google.com/presentation/d/1YcVYtLqdA66Wo--VtW7bGDcfk63k7TgSIrQg1IFWDdk/edit?usp=sharing) if you need more info and then follow these steps. Here's [an overview of the symbols](https://www.gliffy.com/blog/how-to-flowchart-basic-symbols-part-1-of-3) you can use and their meaning.
 
 - Draw each of the major components of your app (usual suspects: client, your server, external resource server)
 - Write under each component what’s inside its data model
