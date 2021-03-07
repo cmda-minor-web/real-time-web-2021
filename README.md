@@ -65,98 +65,78 @@ Goal: Build and deploy a unique barebone real-time app
 #### Tuesday 6 April
 **09.30**  [*Lukas, Justus*] Course kickoff. Make a start with barebone product (skills -> your own project)
 
-**11.00** [*Robin, Wouter*] Start working on your own project, ask Robin and Wouter for help if needed
+**11.00** [*Robin, Wouter*] Start working on your own project, ask Robin and Wouter for help if needed.
 
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 9 April
-**9.30** [*Lukas, Justus*] API creating explained. What is socket.io? Data management in a nutshell.
+**09.30** [*Lukas, Justus*] API creating explained. What is socket.io? Data management in a nutshell.
 
-**10.30** [*Robin, Wouter*]: Continue working on product, ask Robin and Wouter for help if needed
+**10.30** [*Robin, Wouter*]: Continue working on product, ask Robin and Wouter for help if needed.
 
 **16.00** [*Robin, Wouter*] Wrap-up for the first week
 
-### Week 2
+### Week 2 - Sockets and data
 Goal: Store, manipulate and share data between server-client   
 
-[Exercises]()    
+[Exercises]()
 [Slides]()
 
 #### Monday 12 April
-9.30 - Lukas, Justus
-- Feedback of last week
-- How does the rubric work?
-- Data management explained
+**09.30** [*Lukas, Justus*] Feedback about last week. How you will be tested (rubric). Explanation of data management.
 
-11:00 - Robin, Wouter
-* Continue working on product
-Ask Robin and Maikel for help if needed
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
 
-16.00 - Robin, Wouter
-Wrap-up
+**16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Tuesday 13 April
-9.30 - Lukas, Justus
+**09.30** [*Lukas, Justus*]
 - Live coding
 - Data management explained
 - Socket broadcast functions
 - [Data Life Cycle diagram]()
 
-11:00 - Robin, Wouter
-* Continue working on product
-Ask Robin and Wouter for help if needed
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
 
-16.00 - Robin, Wouter
-Wrap-up
+**16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 16 April
-10.30 - Lukas, Justus
-- Checkup in clubs (30 min)
+**10.30** [*Lukas, Justus*] Checkup for the week (in clubs ~30 min)
 
-### Week 3
+### Week 3 - Dealing with multiple users
 Goal: Handle data sharing and multi-user support 
 [Exercises]()  
 [Slides]()
 
 
 #### Monday 19 April
-9.30 - Lukas, Justus
-- Storing data
-- Caching
-- Security
-- Sessions
+**09.30** [*Lukas, Justus*] Storing data, caching, security and sessions.
 
-11:00 - Robin, Wouter
-* Continue working on product
-Ask Robin and Wouter for help if needed
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
 
-16.00 - Robin, Wouter
-Wrap-up
+**16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Tuesday 20 April
-9.30 - Lukas, Justus
-- [OAuth](https://docs.google.com/presentation/d/1TDArdo3w8pIQbpGK9ASKabLpYfqnHL2gAkiAOZHgHBA/edit?usp=sharing)
-- [Peer reviews](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/peer-review.md)
+**09.30** [*Lukas, Justus*] Short explanation of [OAuth](https://docs.google.com/presentation/d/1TDArdo3w8pIQbpGK9ASKabLpYfqnHL2gAkiAOZHgHBA/edit?usp=sharing). Show your code to others in [peer reviews](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/peer-review.md)
 
-11:00 - Robin, Wouter
-* Continue working on product
-Ask Robin and Wouter for help if needed
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
 
-16.00 - Robin, Wouter
-Wrap-up
+**16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 23 April
-10.30 - Lukas, Justus
-- Checkup in clubs (30 min)
+**10.30** [*Lukas, Justus*] Checkup for the course (in clubs ~30 min)
 
 ### Week 4
 Assessments & Wrap-up for the course
 
 #### Wednesday
+**09.30** [*Lukas, Justus*] Assessments (scheduled)
 
 #### Thursday
+**09.30** [*Lukas, Justus*] Assessments (scheduled)
 
 #### Friday
+**15.00** [*Everyone*] Wrap-up for the course. (drinks?!)
 
 <!--
 ## Schema
