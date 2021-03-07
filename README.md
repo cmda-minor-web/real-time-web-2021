@@ -59,43 +59,33 @@ Your efforts will be graded using a single point rubric (see below). You will ha
 ### Week 1 - Getting a grip
 Goal: Build and deploy a unique barebone real-time app  
 
-[Exercises]()
-
+[Exercises]()  
 [Slides]()  
 
 #### Tuesday 6 April
-**09.30**  [*Lukas, Justus*] Course kickoff. Make a start with barebone product (skills -> your own project)
-
-**11.00** [*Robin, Wouter*] Start working on your own project, ask Robin and Wouter for help if needed.
-
+**09.30**  [*Lukas, Justus*] Course kickoff. Make a start with barebone product (skills -> your own project)  
+**11.00** [*Robin, Wouter*] Start working on your own project, ask Robin and Wouter for help if needed.  
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 9 April
-**09.30** [*Lukas, Justus*] API creating explained. What is socket.io? Data management in a nutshell.
-
-**10.30** [*Robin, Wouter*]: Continue working on product, ask Robin and Wouter for help if needed.
-
+**09.30** [*Lukas, Justus*] API creating explained. What is socket.io? Data management in a nutshell.  
+**10.30** [*Robin, Wouter*]: Continue working on product, ask Robin and Wouter for help if needed.  
 **16.00** [*Robin, Wouter*] Wrap-up for the first week
 
 ### Week 2 - Sockets and data
 Goal: Store, manipulate and share data between server-client   
 
-[Exercises]()
-
+[Exercises]()  
 [Slides]()
 
 #### Monday 12 April
-**09.30** [*Lukas, Justus*] Feedback about last week. How you will be tested (rubric). Explanation of data management.
-
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
-
+**09.30** [*Lukas, Justus*] Feedback about last week. How you will be tested (rubric). Explanation of data management.  
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.  
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Tuesday 13 April
-**09.30** [*Lukas, Justus*] Live coding, socket broadcast functions and [data lifecycle diagrams]().
-
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
-
+**09.30** [*Lukas, Justus*] Live coding, socket broadcast functions and [data lifecycle diagrams]().  
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.  
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 16 April
@@ -104,22 +94,17 @@ Goal: Store, manipulate and share data between server-client
 ### Week 3 - Dealing with multiple users
 Goal: Handle data sharing and multi-user support 
 
-[Exercises]()
-
+[Exercises]()  
 [Slides]()
 
 #### Monday 19 April
-**09.30** [*Lukas, Justus*] Storing data, caching, security and sessions.
-
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
-
+**09.30** [*Lukas, Justus*] Storing data, caching, security and sessions.  
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.  
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Tuesday 20 April
-**09.30** [*Lukas, Justus*] Short explanation of [OAuth](https://docs.google.com/presentation/d/1TDArdo3w8pIQbpGK9ASKabLpYfqnHL2gAkiAOZHgHBA/edit?usp=sharing). Show your code to others in [peer reviews](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/peer-review.md)
-
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
-
+**09.30** [*Lukas, Justus*] Short explanation of [OAuth](https://docs.google.com/presentation/d/1TDArdo3w8pIQbpGK9ASKabLpYfqnHL2gAkiAOZHgHBA/edit?usp=sharing). Show your code to others in [peer reviews](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/peer-review.md)  
+**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.  
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 23 April
