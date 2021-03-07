@@ -64,12 +64,16 @@ Goal: Build and deploy a unique barebone real-time app
 
 #### Tuesday 6 April
 **09.30**  [*Lukas, Justus*] Course kickoff. Make a start with barebone product (skills -> your own project)
+
 **11.00** [*Robin, Wouter*] Start working on your own project, ask Robin and Wouter for help if needed
+
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Friday 9 April
 **9.30** [*Lukas, Justus*] API creating explained. What is socket.io? Data management in a nutshell.
+
 **10.30** [*Robin, Wouter*]: Continue working on product, ask Robin and Wouter for help if needed
+
 **16.00** [*Robin, Wouter*] Wrap-up for the first week
 
 ### Week 2
