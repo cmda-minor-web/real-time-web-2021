@@ -92,11 +92,7 @@ Goal: Store, manipulate and share data between server-client
 **16.00** [*Robin, Wouter*] Wrap-up for the day
 
 #### Tuesday 13 April
-**09.30** [*Lukas, Justus*]
-- Live coding
-- Data management explained
-- Socket broadcast functions
-- [Data Life Cycle diagram]()
+**09.30** [*Lukas, Justus*] Live coding, socket broadcast functions and [data lifecycle diagrams]().
 
 **11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.
 
