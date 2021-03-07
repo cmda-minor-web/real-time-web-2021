@@ -59,7 +59,8 @@ Your efforts will be graded using a single point rubric (see below). You will ha
 ### Week 1 - Getting a grip
 Goal: Build and deploy a unique barebone real-time app  
 
-[Exercises]()    
+[Exercises]()
+
 [Slides]()  
 
 #### Tuesday 6 April
@@ -80,6 +81,7 @@ Goal: Build and deploy a unique barebone real-time app
 Goal: Store, manipulate and share data between server-client   
 
 [Exercises]()
+
 [Slides]()
 
 #### Monday 12 April
@@ -105,9 +107,10 @@ Goal: Store, manipulate and share data between server-client
 
 ### Week 3 - Dealing with multiple users
 Goal: Handle data sharing and multi-user support 
-[Exercises]()  
-[Slides]()
 
+[Exercises]()
+
+[Slides]()
 
 #### Monday 19 April
 **09.30** [*Lukas, Justus*] Storing data, caching, security and sessions.
