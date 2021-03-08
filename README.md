@@ -97,9 +97,8 @@ Goal: Store, manipulate and share data between server-client
 **Day assignment:** (Proof of) Concept *(individually)*. i) Create a (3 > 1) concept based on existing data from an API and ii) map this data using modelling techniques.
 
 #### Tuesday 13 April
-**Talk subjects:** Above all else, show the data. [(slides)](https://docs.google.com/presentation/d/1tW4klrDjt1AfWte311uKkfQYwaHwokzQ-ue3a4VphqA/edit?usp=sharing) 
-Live coding, socket broadcast functions and [data lifecycle diagrams]().\
-**Day assignment:** Concept (individueel): i) Werk een deel van de kernfunctionaliteit van jouw concept uit en ii) toon het bijbehorende data lifecycle diagram.
+**Talk subjects:** Above all else, show the data. [(slides)](https://docs.google.com/presentation/d/1tW4klrDjt1AfWte311uKkfQYwaHwokzQ-ue3a4VphqA/edit?usp=sharing) Securing real-time web apps, offline support, the publication/subscription model and (case study) Quek!\
+**Day assignment:** Proof of concept (individueel): i) Werk een deel van de kernfunctionaliteit van jouw concept uit en ii) toon het bijbehorende data lifecycle diagram.
 
 #### Friday 16 April - Checkup!
 Instead of our talk we will have a [peer review session](). You will read, comment and fire issues on each others code. Doing this is really good for your programming insight and helps others refining/refactoring their code.
@@ -124,12 +123,12 @@ Instead of our talk we will have a [peer review session](). You will read, comme
 Goal: Handle data sharing and multi-user support 
 
 #### Monday 19 April
-**Talk subjects:** Storing data, caching, security and sessions.\
+**Talk subjects:** Roll your own... [(slides) ]() On data management, firebase?!, and authentication via OAuth\
 **Day assignment:**
 
 #### Tuesday 20 April
-**Talk subjects:** (Short) explanation of OAuth. (slides)
-**Day assignment:**
+**Talk subjects:** Not ignoring the UI-Stack (slides). Over usability, feedback, feedforward etc in real-time applicaties, (case study) postNL loader and FAQ.
+**Day assignment:** 
 
 #### Friday 23 April
 We will have our final [peer review session](). You will read, comment and fire issues on each others code. Doing this helps others dotting the i’s on their project.
