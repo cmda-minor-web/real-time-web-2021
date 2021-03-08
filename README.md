@@ -123,11 +123,11 @@ Instead of our talk we will have a [peer review session](). You will read, comme
 Goal: Handle data sharing and multi-user support 
 
 #### Monday 19 April
-**Talk subjects:** Roll your own... [(slides) ]() On data management, firebase?!, and authentication via OAuth\
-**Day assignment:**
+**Talk subjects:** Roll your own... [(slides) ](https://docs.google.com/presentation/d/1Cx9qCo8QQXH5Btbtwg0L61so-wn2OxFQZdphIhbumQk/edit?usp=sharing) Data management using firebase and other ways of adding your own data. Authentication via OAuth\
+**Day assignment:** 
 
 #### Tuesday 20 April
-**Talk subjects:** Not ignoring the UI-Stack (slides). Over usability, feedback, feedforward etc in real-time applicaties, (case study) postNL loader and FAQ.
+**Talk subjects:** Not ignoring the UI-Stack [(slides)](https://docs.google.com/presentation/d/1ACuUJ-B19hgFN2CCTYH8ClN0WD69ok8ZVnkRGbU0FjA/edit?usp=sharing). Usability, feedback, feedforward etc. in real-time web apps, (case study) postNL loader and FAQ.
 **Day assignment:** 
 
 #### Friday 23 April
