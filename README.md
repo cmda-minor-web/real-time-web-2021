@@ -127,7 +127,7 @@ Goal: Handle data sharing and multi-user support
 **Day assignment:** 
 
 #### Tuesday 20 April
-**Talk subjects:** Not ignoring the UI-Stack [(slides)](https://docs.google.com/presentation/d/1ACuUJ-B19hgFN2CCTYH8ClN0WD69ok8ZVnkRGbU0FjA/edit?usp=sharing). Usability, feedback, feedforward etc. in real-time web apps, (case study) postNL loader and FAQ.
+**Talk subjects:** Not ignoring the UI-Stack! [(slides)](https://docs.google.com/presentation/d/1ACuUJ-B19hgFN2CCTYH8ClN0WD69ok8ZVnkRGbU0FjA/edit?usp=sharing). Usability, feedback, feedforward etc. in real-time web apps, (case study) postNL loader and FAQ.
 **Day assignment:** 
 
 #### Friday 23 April
