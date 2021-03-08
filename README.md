@@ -44,7 +44,7 @@ After finishing this program you can:
 - _handle multi-user support._
 
 ## Grading
-Your efforts will be graded using a single point rubric (see below). You will have to pass the criterion to pass the course. During the test you will be consulted and will be given feedback on things we think deficient and things we think are an improvement on the criterion.
+Your efforts will be graded using a single point rubric (see below). You will have to pass the criterion (centre column) to pass the course. During the test you will be consulted and will be given feedback on things we think deficient and things we think are an improvement on the criterion.
 
 | Deficiency | Criterion | Improvement |
 |:--|:--|:--|
@@ -56,62 +56,102 @@ Your efforts will be graded using a single point rubric (see below). You will ha
 
 ## Programme
 
-### Week 1 - Getting a grip
-Goal: Build and deploy a unique barebone real-time app  
+### Daily schedule
+To keep things simple we use a daily schedule that will be used during normal course days. We make exceptions for checkups and assessments, on these days a different schedule will be given.
 
-[Exercises]()  
-[Slides]()  
+| Time | Who | Activity |
+|:--|:--|:--|
+| *~09:00* | *(Lukas, Justus, Robin, Wouter)* | *Standup* |
+| 09:30 | Tribe *+(Lukas, Justus, Robin, Wouter)* | Talk with crucial information (make sure you attend!) |
+| 11:00 | Teams in MS Teams: *(ex. R2D2 Team A)* | Work on the (day)assignment |
+|  | Squad R2D2 Team B *+(Justus, Wouter)* | Standup |
+|  | Squad SQUID Team B *+(Lukas, Robin)* | Standup |
+| 11:30 | Squad R2D2 Team C *+(Justus, Wouter)* | Standup |
+|  | Squad SQUID Team C *+(Lukas, Robin)* | Standup |
+| 12:00 | Squad R2D2 Team A *+(Justus, Wouter)* | Standup |
+|  | Squad SQUID Team A *+(Lukas, Robin)* | Standup |
+| 13:00 | Tribe *+(Robin, Wouter)* | Continue work on the (day)assignment |
+| 16:00 | Squad R2D2 Team B *+(Wouter)* | Standup |
+|  | Squad SQUID Team B *+(Robin)* | Standup |
+| 16:15 | Squad R2D2 Team C *+(Wouter)* | Standup |
+|  | Squad SQUID Team C *+(Robin)* | Standup |
+| 16:30 | Squad R2D2 Team A *+(Wouter)* | Standup |
+|  | Squad SQUID Team A *+(Robin)* | Standup |
+
+### Week 1 - Getting a grip
+Goal: Build and deploy a simple but unique real-time app
 
 #### Tuesday 6 April
-**09.30**  [*Lukas, Justus*] Course kickoff. Make a start with barebone product (skills >> your own project)\
-**11.00** [*Robin, Wouter*] Start working on your own project, ask Robin and Wouter for help if needed.\
-**16.00** [*Robin, Wouter*] Wrap-up for the day
+**Talk subjects:** Hit the ground running... [(slides)](https://docs.google.com/presentation/d/1Z-zOIDvFB0P2qGHV0F74n9T4kprgybJ_8GYU-1MaKfM/edit?usp=sharing) Course objective and explanation of the assignment, examples from last year, explanation of real-time, (live coded) bare bone chat app and deployment on Heroku.\
+**Day assignment:** Make it so *(as a team)*: Implement (code/style/discuss/deploy) basic chat (or other realtime) functionality on your teampage!
 
 #### Friday 9 April
-**09.30** [*Lukas, Justus*] API creating explained. What is socket.io? Data management in a nutshell.\
-**10.30** [*Robin, Wouter*]: Continue working on product, ask Robin and Wouter for help if needed.\
-**16.00** [*Robin, Wouter*] Wrap-up for the first week
+**Talk subjects:** My first realtime web app! [(slides)](https://docs.google.com/presentation/d/18eftO3epzIXDjdwl3cn5Wq99fkQYCUnExUqq9P72A3k/edit?usp=sharing) Short recap, (local) data management, using (wire) flows for realtime web apps, (live coded) fieldwork.\
+**Day assignment:** Make it so *(individually)*. i) Create (code/style/discuss/deploy) a chat app (or other realtime functionality) based on the examples and ii) add your own unique feature!
 
 ### Week 2 - Sockets and data
 Goal: Store, manipulate and share data between server-client   
 
-[Exercises]()  
-[Slides]()
-
 #### Monday 12 April
-**09.30** [*Lukas, Justus*] Feedback about last week. How you will be tested (rubric). Explanation of data management.\
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.\
-**16.00** [*Robin, Wouter*] Wrap-up for the day
+**Talk subjects:** Data driven development?! [(slides)](https://docs.google.com/presentation/d/1WC1DxkQm2eUCTQp7dEfv0cTVMK7zlg3der0P0qP7S5I/edit?usp=sharing) Feedback about last week, final assignment and conditions (rubric), explanation of data management, (live coded) Long polling vs Websockets. \
+**Day assignment:** (Proof of) Concept *(individually)*. i) Create a (3 > 1) concept based on existing data from an API and ii) map this data using modelling techniques.
 
 #### Tuesday 13 April
-**09.30** [*Lukas, Justus*] Live coding, socket broadcast functions and [data lifecycle diagrams]().\
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.\
-**16.00** [*Robin, Wouter*] Wrap-up for the day
+**Talk subjects:** Above all else, show the data. [(slides)](https://docs.google.com/presentation/d/1tW4klrDjt1AfWte311uKkfQYwaHwokzQ-ue3a4VphqA/edit?usp=sharing) 
+Live coding, socket broadcast functions and [data lifecycle diagrams]().\
+**Day assignment:** Concept (individueel): i) Werk een deel van de kernfunctionaliteit van jouw concept uit en ii) toon het bijbehorende data lifecycle diagram.
 
-#### Friday 16 April
-**10.30** [*Lukas, Justus*] Checkup for the week (in clubs ~30 min)
+#### Friday 16 April - Checkup!
+Instead of our talk we will have a [peer review session](). You will read, comment and fire issues on each others code. Doing this is really good for your programming insight and helps others refining/refactoring their code.
+
+| Time | Who | Activity |
+|:--|:--|:--|
+| 09:30 | Tribe *+(Lukas, Justus, Robin, Wouter)* | Peer review |
+| 10:30 | Squad R2D2 Team B.1 *+(Justus)* | Checkup |
+|  | Squad R2D2 Team B.2 *+(Wouter)* | Checkup |
+|  | Squad SQUID Team B.1 *+(Lukas)* | Checkup |
+|  | Squad SQUID Team B.2 *+(Robin)* | Checkup |
+| 11:00 | Squad R2D2 Team C.1 *+(Justus)* | Checkup |
+|  | Squad R2D2 Team C.2 *+(Wouter)* | Checkup |
+|  | Squad SQUID Team C.1 *+(Lukas)* | Checkup |
+|  | Squad SQUID Team C.2 *+(Robin)* | Checkup |
+| 11:30 | Squad R2D2 Team A *+(Justus)* | Checkup |
+|  | Squad R2D2 Team A *+(Wouter)* | Checkup |
+|  | Squad SQUID Team A *+(Lukas)* | Checkup |
+|  | Squad SQUID Team A *+(Robin)* | Checkup |
 
 ### Week 3 - Dealing with multiple users
 Goal: Handle data sharing and multi-user support 
 
-[Exercises]()  
-[Slides]()
-
 #### Monday 19 April
-**09.30** [*Lukas, Justus*] Storing data, caching, security and sessions.\
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.\
-**16.00** [*Robin, Wouter*] Wrap-up for the day.
+**Talk subjects:** Storing data, caching, security and sessions.\
+**Day assignment:**
 
 #### Tuesday 20 April
-**09.30** [*Lukas, Justus*] Short explanation of [OAuth](https://docs.google.com/presentation/d/1TDArdo3w8pIQbpGK9ASKabLpYfqnHL2gAkiAOZHgHBA/edit?usp=sharing). Show your code to others in [peer reviews](https://github.com/cmda-minor-web/real-time-web-1920/blob/master/course/peer-review.md)\
-**11:00** [*Robin, Wouter*] Continue working on product, ask Robin and Wouter for help if needed.\
-**16.00** [*Robin, Wouter*] Wrap-up for the day
+**Talk subjects:** (Short) explanation of OAuth. (slides)
+**Day assignment:**
 
 #### Friday 23 April
-**10.30** [*Lukas, Justus*] Checkup for the course (in clubs ~30 min)
+We will have our final [peer review session](). You will read, comment and fire issues on each others code. Doing this helps others dotting the i’s on their project.
+
+| Time | Who | Activity |
+|:--|:--|:--|
+| 09:30 | Tribe *+(Lukas, Justus, Robin, Wouter)* | Peer review |
+| 10:30 | Squad R2D2 Team B.1 *+(Justus)* | Checkup |
+|  | Squad R2D2 Team B.2 *+(Wouter)* | Checkup |
+|  | Squad SQUID Team B.1 *+(Lukas)* | Checkup |
+|  | Squad SQUID Team B.2 *+(Robin)* | Checkup |
+| 11:00 | Squad R2D2 Team C.1 *+(Justus)* | Checkup |
+|  | Squad R2D2 Team C.2 *+(Wouter)* | Checkup |
+|  | Squad SQUID Team C.1 *+(Lukas)* | Checkup |
+|  | Squad SQUID Team C.2 *+(Robin)* | Checkup |
+| 11:30 | Squad R2D2 Team A *+(Justus)* | Checkup |
+|  | Squad R2D2 Team A *+(Wouter)* | Checkup |
+|  | Squad SQUID Team A *+(Lukas)* | Checkup |
+|  | Squad SQUID Team A *+(Robin)* | Checkup |
 
 ### Week 4
-Assessments & Wrap-up for the course
+Goal: Assess and wrap-up the course!
 
 #### Wednesday
 **09.30** [*Lukas, Justus*] Assessments (scheduled)
@@ -122,36 +162,10 @@ Assessments & Wrap-up for the course
 #### Friday
 **15.00** [*Everyone*] Wrap-up for the course. (drinks?!)
 
-<!--
-## Schema
 
-| Laurens  |   |             |          |   |           |          |   |          |
-|----------|---|-------------|----------|---|-----------|----------|---|----------|
-| Groep 1  | 1 | Joan        | Groep 2  | 1 | Nick      | Groep 3  | 1 | Bas      |
-|          | 2 | Leroy       |          | 2 | Marjolein |          | 2 | Wouter   |
-|          | 3 | Reinier     |          | 3 | Michel    |          | 3 | Nathan   |
-|          | 4 | Stefan      |          | 4 | Sjors     |          | 4 | Mohammad |
-|          |   |             |          |   |           |          |   |          |
-| Guido    |   |             |          |   |           |          |   |          |
-| Groep 4  | 1 | Kris        | Groep 5  | 1 | Lennart   | Groep 6  | 1 | Tabish   |
-|          | 2 | Daniel      |          | 2 | Mees      |          | 2 | Robin F  |
-|          | 3 | Marissa     |          | 3 | Thijs S   |          | 3 | Max      |
-|          | 4 | Roy         |          | 4 | Kevin C   |          | 4 | Robert   |
-|          |   |             |          |   |           |          |   |          |
-| Maikel   |   |             |          |   |           |          |   |          |
-| Groep 7  | 1 | Deanna      | Groep 8  | 1 | Heralt    | Groep 9  | 1 | Marten   |
-|          | 2 | Lars        |          | 2 | Stan      |          | 2 | Damian   |
-|          | 3 | Ramon       |          | 3 | Kyle      |          | 3 | Manouk   |
-|          | 4 | Jennifer    |          | 4 | Gijs      |          | 4 | Coen     |
-|          |   |             |          |   |           |          |   |          |
-| Robin    |   |             |          |   |           |          |   |          |
-| Groep 10 | 1 | Tomas       | Groep 11 | 1 | Giovanni  | Groep 12 | 1 | May      |
-|          | 2 | Peppe-Quint |          | 2 | Wessel    |          | 2 | Lien     |
-|          | 3 | Kevin K     |          | 3 | Tim       |          | 3 | Rick     |
-|          | 4 | Simone      |          | 4 | Randy     |          | 4 | Monika   |
-|          |   |             |          |   |           |          |   |          |
 
--->
+
+<!-- Here are some hints for your  -->
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
