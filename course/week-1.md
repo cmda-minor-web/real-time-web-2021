@@ -17,7 +17,6 @@ Read this [article about RDD](http://tom.preston-werner.com/2010/08/23/readme-dr
 
 *Note:* keep your documentation up-to-date while working on your project!
 
-1. [Basic setup][exercise1]
 ### Coding Style
 Maybe you already have a preferred code-style, maybe you want to try something else. Discuss the style you will use during this project and write up a few basic rules in a section in your readme. You can look at some of the style guides below but keep in mind that these are very extensive, for this project (and your own sanity), please keep it simple.
 
