@@ -87,7 +87,7 @@ Goal: Build and deploy a simple but unique real-time app
 
 #### Friday 9 April
 **Talk subjects:** My first realtime web app! [(slides)](https://docs.google.com/presentation/d/18eftO3epzIXDjdwl3cn5Wq99fkQYCUnExUqq9P72A3k/edit?usp=sharing) Short recap, (local) data management, using (wire) flows for realtime web apps, (live coded) multi-user woordzoeker.\
-**Day assignment:** [(assignment)]() Make it so *(individually)*. i) Create (code/style/discuss/deploy) a chat app (or other realtime functionality) based on the examples and ii) add your own unique feature!
+**Day assignment:** [(assignment)](./course/week-1.md) Make it so *(individually)*. i) Create (code/style/discuss/deploy) a chat app (or other realtime functionality) based on the examples and ii) add your own unique feature!
 
 ### Week 2 - Sockets and data
 Goal: Store, manipulate and share data between server-client   
