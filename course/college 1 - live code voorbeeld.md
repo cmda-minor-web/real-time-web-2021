@@ -66,3 +66,5 @@ Als een gebruiker connectie maakt zie je de log message die we ingesteld hebben,
 ...
 ```
 
+## Stap 4 - event propagation
+
