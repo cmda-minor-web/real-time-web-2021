@@ -13,7 +13,7 @@
 - Minor: [Web Design and Development](https://dlo.mijnhva.nl/d2l/le/content/275640/Home) (*login required)
 - Course Coordinator: Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5))
 - Minor Coordinator(s): Koop Reynders ([@KoopReynders](https://github.com/KoopReynders))
-- Lecturers: Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5)) & Lukas van Driel ([@]())
+- Lecturers: Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5)) & Lukas van Driel ([@lukasvan3l](https://github.com/lukasvan3l))
 - Student Assistants: Robin ([@]()) & Wouter ([@]())
 - Credit: 3 ECTS credits
 - Academic year: 2020-2021
