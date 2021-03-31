@@ -6,7 +6,7 @@ This week we will focus on client-server communication and data management.
 
 ## Assignments
 1. [(Proof of) Concept](#assignment-1-proof-of-concept)
-2. [Proof of Concept](#assignment-2-make-it-so)
+2. [Proof of Concept](#assignment-2-proof-of-concept)
 
 ## Assignment 1: (Proof of) Concept
 Let’s create a concept! Why..? Because we always create a concept.. You can start either by writing the readme for a **meaningful** realtime application and then finding a matching API; or by looking at existing realtime APIs and finding meaningful realtime uses for them. Choose your approach and read the corresponding paragraph below.
