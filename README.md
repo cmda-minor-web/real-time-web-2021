@@ -123,7 +123,7 @@ Instead of our talk we will have a [peer review session](./course/peer-review.md
 Goal: Handle data sharing and multi-user support 
 
 #### Monday 19 April
-**Talk subjects:** Roll your own... [(slides) ](https://docs.google.com/presentation/d/1Cx9qCo8QQXH5Btbtwg0L61so-wn2OxFQZdphIhbumQk/edit?usp=sharing) Data management using firebase and other ways of adding your own data. Authentication via OAuth\
+**Talk subjects:** Roll your own... [(slides) ](https://docs.google.com/presentation/d/1Cx9qCo8QQXH5Btbtwg0L61so-wn2OxFQZdphIhbumQk/edit?usp=sharing) Data management, the functional programming trinity (map, filter and reduce). OAuth?!
 **Day assignment:** [(assignment)](./course/week-3.md)
 
 #### Tuesday 20 April
