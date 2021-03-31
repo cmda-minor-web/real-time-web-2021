@@ -1,4 +1,4 @@
-# Excercises Week 1
+# Assignments for week 1
 
 ## Intention
 After all you learned so far, you now will learn how to build real-time applications, and rule the world!
@@ -13,7 +13,7 @@ This is a team exercise which means you work together on one repository. (Of cou
 ### Readme
 Start out by forking [this repository](https://github.com/cmda-minor-web/real-time-web-2021) to one of your github accounts. Add all your team members as collaborator so you can work together.
 
-Read this [article about RDD](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) if you haven’t already and look at [some of the examples in this gist](https://gist.github.com/stefanbirkner/835b7d0c498b4026f65a). Discuss findings, insights and/or allergies you encounter in with team. As you will be using markdown a lot when writing readme files you might want to freshen your knowledge by scanning [mastering markdown](https://guides.github.com/features/mastering-markdown/).
+Read this [article about RDD](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) if you haven’t already and look at these [notes about RDD](https://deterministic.space/readme-driven-development.html) and [some of the examples in this gist](https://gist.github.com/stefanbirkner/835b7d0c498b4026f65a). Discuss findings, insights and/or allergies you encounter in with team. As you will be using markdown a lot when writing readme files you might want to freshen your knowledge by scanning [mastering markdown](https://guides.github.com/features/mastering-markdown/).
 
 Write your [README.md](../README.md) and get started on your project. As a team you will discuss details, make sketches, make decisions, divide tasks etc. Write all of this down so everyone has an idea of what to work on. 
 
@@ -59,7 +59,7 @@ Review the project as a team, create issues for everything that needs extra atte
 This individual exercise is not alltogether different from [assignment 1](#assignment-1-make-it-so) - the one you did as a team.. remember? It even bears the same name! For assignment 2 (this one) you will collect all of your experience and go full-out on a unique realtime app. Again you will use *readme driven development* (RDD). Use this assignment to start your adventure towards comprehension of the realtime universe.
 
 ### Readme
-You have probably forked your team project at the end of fork it again and rename the repo to make sure you can clearly distinguish between the two. You will be working on this project by yourself so there is no need to add collaborators to Github.
+You have probably forked your team project at the end of last assignment. Create a new branch called ‘team-page’ and switch back to the main branch. By branching out we’ve created a snapshot of this repository at this point, you can always find the code by switching to the ‘team-page’ branch. You will be working on this project by yourself so there is no need to add collaborators to Github.
 
 Think up unique features that will make your chat much more interesting. What is unique? Not unique are storing nicknames, showing who’s online or any of the other feature requests listed at the bottom of the [socket.io tutorial](https://socket.io/get-started/chat/). Unique is using D3 to structure text into SVG art, using words to fight each other in a text based game, additional features you can earn if you stay in chat long enough. It doesn’t even have to be a chat app, just use the socket.io framework.
 
@@ -70,6 +70,7 @@ Write your [README.md](../README.md), use the resources below and *make it so*!
 #### Resources
 You’ve probably read all these before in [assignment 1](#assignment-1-make-it-so):
 - [article about RDD](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+- [notes about RDD](https://deterministic.space/readme-driven-development.html)
 - [some RDD examples](https://gist.github.com/stefanbirkner/835b7d0c498b4026f65a)
 - [mastering markdown](https://guides.github.com/features/mastering-markdown/).
 - [npm script](https://docs.npmjs.com/cli/run-script)
