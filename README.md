@@ -124,11 +124,11 @@ Goal: Handle data sharing and multi-user support
 
 #### Monday 19 April
 **Talk subjects:** Roll your own... [(slides) ](https://docs.google.com/presentation/d/1Cx9qCo8QQXH5Btbtwg0L61so-wn2OxFQZdphIhbumQk/edit?usp=sharing) Data management using firebase and other ways of adding your own data. Authentication via OAuth\
-**Day assignment:** [(assignment)]()
+**Day assignment:** [(assignment)](./course/week-3.md)
 
 #### Tuesday 20 April
 **Talk subjects:** Not ignoring the UI-Stack! [(slides)](https://docs.google.com/presentation/d/1ACuUJ-B19hgFN2CCTYH8ClN0WD69ok8ZVnkRGbU0FjA/edit?usp=sharing). Usability, feedback, feedforward etc. in real-time web apps, (case study) postNL loader and FAQ.
-**Day assignment:** [(assignment)]()
+**Day assignment:** [(assignment)](./course/week-3.md)
 
 #### Friday 23 April
 We will have our final [peer review session](./course/peer-review.md). You will read, comment and fire issues on each others code. Doing this helps others dotting the i’s on their project.
