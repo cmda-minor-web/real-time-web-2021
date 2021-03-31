@@ -101,7 +101,7 @@ Goal: Store, manipulate and share data between server-client
 **Day assignment:** [(assignment)](./course/week-2.md#assignment-2-proof-of-concept) Proof of concept *(individually)*: i) Create (code/style/discuss/deploy) part of the core functionality for your concept and ii) show the  corresponding data lifecycle diagram.
 
 #### Friday 16 April - Checkup!
-Instead of our talk we will have a [peer review session](). You will read, comment and fire issues on each others code. Doing this is really good for your programming insight and helps others refining/refactoring their code.
+Instead of our talk we will have a [peer review session](./course/peer-review.md). You will read, comment and fire issues on each others code. Doing this is really good for your programming insight and helps others refining/refactoring their code.
 
 | Time | Who | Activity |
 |:--|:--|:--|
@@ -114,10 +114,10 @@ Instead of our talk we will have a [peer review session](). You will read, comme
 |  | Squad R2D2 Team C.2 *+(Wouter)* | Checkup |
 |  | Squad SQUID Team C.1 *+(Lukas)* | Checkup |
 |  | Squad SQUID Team C.2 *+(Robin)* | Checkup |
-| 11:30 | Squad R2D2 Team A *+(Justus)* | Checkup |
-|  | Squad R2D2 Team A *+(Wouter)* | Checkup |
-|  | Squad SQUID Team A *+(Lukas)* | Checkup |
-|  | Squad SQUID Team A *+(Robin)* | Checkup |
+| 11:30 | Squad R2D2 Team A.1 *+(Justus)* | Checkup |
+|  | Squad R2D2 Team A.2 *+(Wouter)* | Checkup |
+|  | Squad SQUID Team A.1 *+(Lukas)* | Checkup |
+|  | Squad SQUID Team A.2 *+(Robin)* | Checkup |
 
 ### Week 3 - Dealing with multiple users
 Goal: Handle data sharing and multi-user support 
@@ -131,7 +131,7 @@ Goal: Handle data sharing and multi-user support
 **Day assignment:** [(assignment)]()
 
 #### Friday 23 April
-We will have our final [peer review session](). You will read, comment and fire issues on each others code. Doing this helps others dotting the i’s on their project.
+We will have our final [peer review session](./course/peer-review.md). You will read, comment and fire issues on each others code. Doing this helps others dotting the i’s on their project.
 
 | Time | Who | Activity |
 |:--|:--|:--|
@@ -144,21 +144,21 @@ We will have our final [peer review session](). You will read, comment and fire 
 |  | Squad R2D2 Team C.2 *+(Wouter)* | Checkup |
 |  | Squad SQUID Team C.1 *+(Lukas)* | Checkup |
 |  | Squad SQUID Team C.2 *+(Robin)* | Checkup |
-| 11:30 | Squad R2D2 Team A *+(Justus)* | Checkup |
-|  | Squad R2D2 Team A *+(Wouter)* | Checkup |
-|  | Squad SQUID Team A *+(Lukas)* | Checkup |
-|  | Squad SQUID Team A *+(Robin)* | Checkup |
+| 11:30 | Squad R2D2 Team A.1 *+(Justus)* | Checkup |
+|  | Squad R2D2 Team A.2 *+(Wouter)* | Checkup |
+|  | Squad SQUID Team A.1 *+(Lukas)* | Checkup |
+|  | Squad SQUID Team A.2 *+(Robin)* | Checkup |
 
 ### Week 4
 Goal: Assess and wrap-up the course!
 
-#### Wednesday
-**09.30** [*Lukas, Justus*] Assessments (scheduled)
+#### Wednesday 28 April
+**09.30** [*Lukas, Justus*] Assessments (scheduled) SQUID A.1/B.1/C.1 and R2D2 A.1/B.1/C.1
 
-#### Thursday
-**09.30** [*Lukas, Justus*] Assessments (scheduled)
+#### Thursday 29 April
+**09.30** [*Lukas, Justus*] Assessments (scheduled) SQUID A.2/B.2/C.2 and R2D2 A.2/B.2/C.2
 
-#### Friday
+#### Friday 30 April 
 **15.00** [*Everyone*] Wrap-up for the course. (drinks?!)
 
 

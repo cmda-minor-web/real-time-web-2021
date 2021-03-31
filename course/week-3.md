@@ -1,7 +1,7 @@
 # Assignments for week 3
 
 ## Intention
-Last week you started work on a **meaningful** webapp that consumes an external source. This week you will learn how to store and serve data from an external source to your own clients. We'll also provide extra challenges, it's up to you if you want to add fancy features or make the app more secure. Just be sure to check it against the rubric and to properly test with multiple users.
+Last week you started work on a **meaningful** webapp that consumes an external source. This week you will learn how to store and serve data from an external source to your own clients. We'll also provide extra challenges, it's up to you if you want to add fancy features or make the app more secure. Just be sure to check it against [the rubric](https://github.com/cmda-minor-web/real-time-web-2021#grading) and to properly test with multiple users.
 
 ## Assignments
 1. [Make it so! (team)](#assignment-1-make-it-so)
