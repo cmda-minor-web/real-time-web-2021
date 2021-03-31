@@ -79,7 +79,7 @@ Add the model to your [README.md](../README.md). **We will check this during you
 Now that you have a *spike* that implements the core idea and grip on the *data lifecycle* for your **meaningful** realtime app, you can use everything you have learned in this and other courses to create an accessible, user-friendly, WCAG proof frontend for a realtime API. If you’ve got the frontend set-up, work on a way for your user to change the data on the server using sockets.
 
 ### Extra challenges:
-If you're certain you can meet the baseline for this course as per [the rubric](https://github.com/cmda-minor-web/real-time-web-2021), these are good challenges to add:
+If you're certain you can meet the baseline for this course as per [the rubric](https://github.com/cmda-minor-web/real-time-web-2021#grading), these are good challenges to add:
 
 - Security (validate user requests server side)
 - Mix different communication methods (SSE, XHR/Fetch, Sockets, Long Polling)
