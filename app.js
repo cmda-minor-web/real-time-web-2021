@@ -4,6 +4,7 @@ const hbs = require('express-handlebars');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
+const io = require('socket.io')(server);
 const path = require('path');
 const port = 3000;
 
@@ -19,6 +20,10 @@ app.set('view engine', 'hbs')
 app.use(express.static(path.join(__dirname, '/public')))
 	.use(express.urlencoded({ extended: true }))
 	.use(home);
+
+io.on('connection', socket => {
+	console.log('A user connected');
+});
 
 // Initiate server on port
 server.listen(port, () => {
