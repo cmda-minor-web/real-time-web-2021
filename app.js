@@ -21,8 +21,15 @@ app.use(express.static(path.join(__dirname, '/public')))
 	.use(express.urlencoded({ extended: true }))
 	.use(home);
 
+// Initiate socket connection
 io.on('connection', socket => {
 	console.log('A user connected');
+	socket.on('disconnect', () => {
+		console.log('user disconnected');
+	});
+	socket.on('chat message', msg => {
+		io.emit('chat message', msg);
+	});
 });
 
 // Initiate server on port
