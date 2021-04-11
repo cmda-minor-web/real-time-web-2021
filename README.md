@@ -13,6 +13,6 @@ To practice with Real Time web based application development I've created a chat
 ## How to use?
 1. Download the zip-file or clone the repo
 2. Run `npm i` inside the terminal to install dependency packages
-3.
-    a. Run `npm run start` to start the local environment
-    b. Run `npm run dev` to start nodemon's development server
+3. Run the application in local or development mode:
+    1. `npm run start`
+    2. `npm run dev`
