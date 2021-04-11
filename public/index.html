@@ -6,33 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script defer src="socket.io/socket.io.js"></script>
-  <script type="module" src="app.js"></script>
-  <title>Chat App</title>
+  <script type="module" src="/js/app.js"></script>
+  <title>Pokémon - Free 4 All</title>
 </head>
 <body>
-  <header>
-    <h1>Real Time Chat</h1>
-  </header>
-  <main>
-    <section class="chat">
-      <ol class="chat--window"></ol>
-      <form class="chat--form">
-        <input
-          class="chat--form__input"
-          type="text"
-        />
-        <button
-          class="chat--form__submit"
-          type="submit"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M0 0h24v24H0z" />
-          <line x1="10" y1="14" x2="21" y2="3" />
-          <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
-        </svg>
-        </button>
-      </form>
-    </section>
-  </main>
+  <canvas id="canvas"></canvas>
 </body>
 </html>
