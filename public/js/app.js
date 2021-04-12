@@ -15,6 +15,7 @@ document.addEventListener('keyup', e => {
 socket
   .emit('newPlayer')
   .on('message', data => console.log(data))
+  .on('data', data => console.log(data))
   .on('state', players => {
     ctx.clearRect(0, 0, 800, 600)
     ctx.fillStyle = '#5370b3'

@@ -26,11 +26,10 @@
   "homepage": "https://github.com/MarvinMichel/real-time-web-2021#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
     "socket.io": "^4.0.1"
   },
   "devDependencies": {
-    "ejs": "^3.1.6",
     "nodemon": "^2.0.7"
   }
 }

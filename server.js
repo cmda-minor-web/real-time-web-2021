@@ -2,6 +2,7 @@ const express = require('express')
 const http = require('http')
 const socketIO = require('socket.io')
 const { join } = require('path')
+const getStarterPokemons = require('./queries/getStarters')
 
 const app = express()
 const server = http.createServer(app)
@@ -18,8 +19,11 @@ app
     res.sendFile(join(__dirname + 'index.html'))
   })
 
-io.on('connection', socket => {
+io.on('connection', async socket => {
   console.info('A new player has joined!')
+
+  const pokemons = await getStarterPokemons()
+  io.sockets.emit('chooseStarter', pokemons)
 
   socket.on('newPlayer', () => {
     players[socket.id] = {
