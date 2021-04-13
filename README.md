@@ -4,9 +4,11 @@ This web application is a real time multiplayer game. The user can choose betwee
 ---
 ## Concept
 Choose a starter pokemon as your character to find your opponents.
+
 <img src="docs/images/choose_starter.png" alt="Choose starter" />
 
 When a pokemon is chosen, you'll enter a random available room to find opponents in. A maximum of 4 players can join the same room.
+
 <img src="docs/images/game-preview.png" alt="Preview of the game" />
 
 ---
@@ -37,12 +39,11 @@ When a pokemon is chosen, you'll enter a random available room to find opponents
 ---
 ## Dependencies
 | Dependencies                                            | Dev Dependencies                                  |
-| ------------                                            | ----------------                                  |
+| ------------------------------------------------------- | ------------------------------------------------- |
 | [Node JS](https://nodejs.org/en/)                       | [Nodemon](https://www.npmjs.com/package/nodemon)  |
 | [Express](https://www.npmjs.com/package/express)        |
 | [Socket.io](https://www.npmjs.com/package/socket.io)    |
 | [Node-fetch](https://www.npmjs.com/package/node-fetch)  |
-| [GraphQL](https://www.npmjs.com/package/graphql)        |
 
 ---
 ### Guide
