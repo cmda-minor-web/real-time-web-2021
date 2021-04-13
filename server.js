@@ -9,17 +9,14 @@ const app = express()
 const server = http.createServer(app)
 const io = socketIO(server)
 const PORT = process.env.PORT || 8080
-const ROOT = join(__dirname + '/public')
+const ROOT = join(__dirname, '/public/')
 
 let players = {}
 
 app
   .use(urlencoded({ extended: true }))
   .use(static(ROOT))
-  .get('/', (req, res) => res.sendFile(join(__dirname + 'index.html')))
-  .post('/', (req, res) => {
-    console.log(req.body.starter)
-  })
+  .get('/', (req, res) => res.sendFile(ROOT, 'index.html'))
 
 io.on('connection', async socket => {
   console.info('A new player has joined!')

@@ -6,6 +6,9 @@ export default class Player {
       left: false,
       right: false
     }
+    this.sprite = ''
+    this.x = 0
+    this.y = 0
   }
 
   handleMovement(key, value) {
@@ -25,5 +28,12 @@ export default class Player {
       default:
         break;
     }
+  }
+
+  setShotAngle(mx, my) {
+    const mousePosition = { x: mx, y: my }
+    let deltaX = mousePosition.x - this.x
+    let deltaY = mousePosition.y - this.y
+    
   }
 }
