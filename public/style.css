@@ -5,3 +5,58 @@
   margin: 0;
   padding: 0;
 }
+
+.select-avatar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.starters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 24em;
+}
+
+.starters--option {
+  cursor: pointer;
+  position: relative;
+  width: 8em;
+}
+
+.starters--option__input {
+  bottom: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.starters--option__input:checked ~ .starters--option__name {
+  box-shadow: 0 .75em .5em -.5em #5370b3;
+}
+
+.starters--option__name {
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: .5em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.starters--option__image {
+  height: 5em;
+  margin-bottom: 1.5em;
+  object-fit: contain;
+  width: 100%;
+}
+
+.starters button {
+  margin: 1.5em auto;
+}

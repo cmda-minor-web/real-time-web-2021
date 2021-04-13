@@ -1,6 +1,7 @@
 const express = require('express')
 const http = require('http')
 const socketIO = require('socket.io')
+const { static, urlencoded } = require('express')
 const { join } = require('path')
 const getStarterPokemons = require('./queries/getStarters')
 
@@ -8,15 +9,16 @@ const app = express()
 const server = http.createServer(app)
 const io = socketIO(server)
 const PORT = process.env.PORT || 8080
+const ROOT = join(__dirname + '/public')
 
 let players = {}
 
 app
-  .use(express.static(
-    join(__dirname + '/public')
-  ))
-  .get('/', (req, res) => {
-    res.sendFile(join(__dirname + 'index.html'))
+  .use(urlencoded({ extended: true }))
+  .use(static(ROOT))
+  .get('/', (req, res) => res.sendFile(join(__dirname + 'index.html')))
+  .post('/', (req, res) => {
+    console.log(req.body.starter)
   })
 
 io.on('connection', async socket => {

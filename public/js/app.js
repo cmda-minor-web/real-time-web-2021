@@ -2,7 +2,7 @@ import Player from './player.js'
 
 const socket = io()
 const currentPlayer = new Player()
-const ctx = setCanvas()
+const context = drawCanvas()
 
 document.addEventListener('keydown', e => {
   currentPlayer.handleMovement(e.key, true)
@@ -15,25 +15,28 @@ document.addEventListener('keyup', e => {
 socket
   .emit('newPlayer')
   .on('message', data => console.log(data))
-  .on('data', data => console.log(data))
   .on('state', players => {
-    ctx.clearRect(0, 0, 800, 600)
-    ctx.fillStyle = '#5370b3'
-    for (let id in players) {
-      const player = players[id]
-      ctx.beginPath()
-      ctx.arc(player.x, player.y, 10, 0, 2 * Math.PI)
-      ctx.fill()
-    }
+    drawAvatarOnCanvas(players)
   })
 
 setInterval(() => {
   socket.emit('move', currentPlayer.move)
 }, 1000 / 60)
 
-function setCanvas() {
+function drawCanvas() {
   const canvas = document.getElementById('canvas')
   canvas.height = 600
   canvas.width = 800
   return canvas.getContext('2d')
+}
+
+function drawAvatarOnCanvas(players) {
+  context.clearRect(0, 0, 800, 600)
+  context.fillStyle = '#5370b3'
+  for (let id in players) {
+    const player = players[id]
+    context.beginPath()
+    context.arc(player.x, player.y, 10, 0, 2 * Math.PI)
+    context.fill()
+  }
 }

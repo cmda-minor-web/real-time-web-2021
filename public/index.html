@@ -6,10 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script defer src="socket.io/socket.io.js"></script>
-  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/index.js"></script>
   <title>Pokémon - Free 4 All</title>
 </head>
 <body>
-  <canvas id="canvas"></canvas>
+  <main>
+    <section class="select-avatar">
+      <h2>Choose your character:</h2>
+      <form class="starters" method="POST">
+        <div class="starters--option">
+          <input
+            type="radio"
+            name="starter"
+            value="bulbasaur"
+            class="starters--option__input"
+            id="starter1"
+          >
+          <img class="starters--option__image" />
+          <label for="starter1" class="starters--option__name"></label>
+        </div>
+        <div class="starters--option">
+          <input
+            type="radio"
+            name="starter"
+            value="charmander"
+            class="starters--option__input"
+            id="starter2"
+          >
+          <img class="starters--option__image"/>
+          <label for="starter2" class="starters--option__name"></label>
+        </div>
+        <div class="starters--option">
+          <input
+            type="radio"
+            name="starter"
+            value="squirtle"
+            class="starters--option__input"
+            id="starter3"
+          >
+          <img class="starters--option__image" />
+          <label for="starter3" class="starters--option__name"></label>
+        </div>
+        <button type="submit" disabled>Choose</button>
+      </form>
+    </section>
+  </main>
+  <!-- <canvas id="canvas"></canvas> -->
 </body>
 </html>
