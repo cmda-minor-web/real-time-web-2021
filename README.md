@@ -24,7 +24,7 @@ When a pokemon is chosen, you'll enter a random available room to find opponents
 - [ ] Shooting with cursor
 - [ ] Physics (borders, collision etc.)
 #### Should haves
-- [ ] Use sprites as character
+- [x] Use sprites as character
 - [ ] Asign players to rooms
 #### Could haves
 - [ ] Maximum of 4 players per room
