@@ -1,16 +1,26 @@
 import Player from './player.js'
+import {
+  drawCanvas,
+  drawAvatarsOnCanvas
+} from './canvas.js'
 
-const socket = io()
-const context = drawCanvas()
-const currentPlayer = new Player()
+// Current player and socket.io classes
+const
+  socket = io(),
+  currentPlayer = new Player()
 
-const selectScreen = document.querySelector('.select-avatar')
-const characterName = document.querySelectorAll('.starters--option__name')
-const characterOptionImages = document.querySelectorAll('.starters--option__image')
-const form = document.querySelector('.starters')
-const characterInputs = document.querySelectorAll('.starters--option__input')
-const submitButton = document.querySelector('.starters > button')
+// Global context variable for canvas
+let context
 
+// HTML Elements
+const
+  characterName = document.querySelectorAll('.starters--option__name'),
+  characterOptionImages = document.querySelectorAll('.starters--option__image'),
+  form = document.querySelector('.starters'),
+  characterInputs = document.querySelectorAll('.starters--option__input'),
+  submitButton = document.querySelector('.starters > button')
+
+// Print starter sprites to screen from server-side API
 socket.on('chooseStarter', starters => {
   starters.map((starter, index) => {
     characterName[index].innerText = starter.name
@@ -18,6 +28,7 @@ socket.on('chooseStarter', starters => {
   })
 })
 
+// Enable/Disable submit button
 characterInputs.forEach(input => {
   input.addEventListener('change', e => {
     if (e.target.checked) {
@@ -28,49 +39,29 @@ characterInputs.forEach(input => {
   })
 })
 
+// Submit starter choice for avatar
 form.addEventListener('submit', e => {
   e.preventDefault()
   const checkedStarter = document.querySelector('.starters--option__input:checked ~ img')
   currentPlayer.sprite = checkedStarter.src
-  selectScreen.remove()
   startGame()
 })
 
+// Listen to keypresses to control player movement
 document.addEventListener('keydown', e => {
   currentPlayer.handleMovement(e.key, true)
+  socket.emit('move', currentPlayer.move)
 })
-
 document.addEventListener('keyup', e => {
   currentPlayer.handleMovement(e.key, false)
 })
 
+// Draw canvas and listen to socket inputs
 function startGame() {
+  context = drawCanvas()
   socket
-    .emit('newPlayer')
-    .on('message', data => console.log(data))
-    .on('state', players => {
-      drawAvatarOnCanvas(players)
+    .emit('newPlayer', currentPlayer.sprite)
+    .on('drawPlayers', players => {
+      drawAvatarsOnCanvas(players, context)
     })
-
-  setInterval(() => {
-    socket.emit('move', currentPlayer.move)
-  }, 1000 / 60)
-}
-
-function drawCanvas() {
-  const canvas = document.getElementById('canvas')
-  canvas.height = 600
-  canvas.width = 800
-  return canvas.getContext('2d')
-}
-
-function drawAvatarOnCanvas(players) {
-  context.clearRect(0, 0, 800, 600)
-  context.fillStyle = '#5370b3'
-  for (let id in players) {
-    const player = players[id]
-    context.beginPath()
-    context.arc(player.x, player.y, 10, 0, 2 * Math.PI)
-    context.fill()
-  }
 }

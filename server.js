@@ -18,34 +18,36 @@ app
   .use(static(ROOT))
   .get('/', (req, res) => res.sendFile(ROOT, 'index.html'))
 
-io.on('connection', async socket => {
-  console.info('A new player has joined!')
+io
+  .on('connection', async socket => {
+    console.info(`Player-${socket.id} has joined`)
 
-  const pokemons = await getStarterPokemons()
-  io.sockets.emit('chooseStarter', pokemons)
+    const pokemons = await getStarterPokemons()
+    io.sockets.emit('chooseStarter', pokemons)
 
-  socket.on('newPlayer', () => {
-    players[socket.id] = {
-      x: 300,
-      y: 300
-    }
+    socket.on('newPlayer', (sprite) => {
+      players[socket.id] = {
+        x: 300,
+        y: 300,
+        sprite: sprite
+      }
+      io.sockets.emit('drawPlayers', players)
+    })
+    .on('move', data => {
+      const player = players[socket.id] || {}
+      if (data.up) player.y -= 10
+      if (data.down) player.y += 10
+      if (data.left) player.x -= 10
+      if (data.right) player.x += 10
+      io.sockets.emit('drawPlayers', players)
+    })
+    .on('disconnect', socket => {
+      console.info(`Player-${socket.id} has left`)
+    })
   })
-
-  socket.on('move', data => {
-    const player = players[socket.id] || {}
-    if (data.up) player.y -= 5
-    if (data.down) player.y += 5
-    if (data.left) player.x -= 5
-    if (data.right) player.x += 5
-  })
-})
 
 server.listen(PORT, () => {
   console.info(
     `Server is running on localhost:${PORT}`
   )
 })
-
-setInterval(() => {
-  io.sockets.emit('state', players)
-}, 1000 / 60)

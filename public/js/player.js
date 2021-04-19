@@ -6,7 +6,7 @@ export default class Player {
       left: false,
       right: false
     }
-    this.sprite = ''
+    this.sprite
     this.x = 0
     this.y = 0
   }

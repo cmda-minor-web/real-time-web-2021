@@ -34,7 +34,7 @@
 }
 
 .starters--option__input:checked ~ .starters--option__name {
-  box-shadow: 0 .75em .5em -.5em #5370b3;
+  box-shadow: 0 .75em 0 -.6em #5370b3;
 }
 
 .starters--option__name {
@@ -59,4 +59,13 @@
 
 .starters button {
   margin: 1.5em auto;
+}
+
+#canvas {
+  height: 100vh;
+  width: 100vw;
+}
+
+#canvas.hidden {
+  display: none;
 }
