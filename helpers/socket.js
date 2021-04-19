@@ -5,15 +5,19 @@ emitter.on('error', response => {
 	console.log(`Error: ${response}`);
 });
 
-emitter.on('tickerPrice', response => {
-	for (let entry of response) {
-		console.log(entry);
+emitter.on('tickerPrice', (error, response) => {
+	if (error === null) {
+		for (let entry of response) {
+			console.log(entry);
+		}
+	} else {
+		console.log(error);
 	}
 });
 
 function getBitcoinPrice() {
 	return setInterval(function () {
-		bitvavo.websocket.tickerPrice({});
+		bitvavo.websocket.tickerPrice({ market: 'BTC-EUR' });
 	}, 5000);
 }
 
