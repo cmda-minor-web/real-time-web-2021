@@ -9,16 +9,11 @@ const io = require('socket.io')(server);
 const path = require('path');
 const port = process.env.PORT || 3000;
 
-// Bitvavo module and options
-const bitvavo = require('bitvavo')().options({
-	ACCESSWINDOW: 10000,
-	RESTURL: 'https://api.bitvavo.com/v2',
-	WSURL: 'wss://ws.bitvavo.com/v2/',
-	DEBUGGING: false,
-});
-
 // Routes
 const home = require('./routes/home');
+
+// Bitvavo API module
+const getBitcoinPrice = require('./helpers/socket');
 
 // Set view engine
 app.set('view engine', 'hbs')
@@ -30,21 +25,9 @@ app.use(express.static(path.join(__dirname, '/public')))
 	.use(express.urlencoded({ extended: true }))
 	.use(home);
 
-io.on('connect', socket => {
-	setInterval(() => {
-		bitvavo.tickerPrice({ market: 'BTC-EUR' }, (err, res) => {
-			if (err === null) {
-				const data = {
-					price: res.price,
-					time: new Date().toLocaleTimeString(),
-				};
-
-				socket.emit('data', { data: data });
-			} else {
-				console.log(err);
-			}
-		});
-	}, 5000);
+// Websocket
+io.on('connect', () => {
+	getBitcoinPrice(io);
 });
 
 // Initiate server on port
