@@ -1,49 +1,67 @@
 const express = require('express')
-const http = require('http')
-const socketIO = require('socket.io')
+const app = express()
+const server = require('http').createServer(app)
+const io = require('socket.io')(server)
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
+const memoryStore = session.MemoryStore
 const { static, urlencoded } = require('express')
 const { join } = require('path')
-const getStarterPokemons = require('./queries/getStarters')
 
-const app = express()
-const server = http.createServer(app)
-const io = socketIO(server)
 const PORT = process.env.PORT || 8080
 const ROOT = join(__dirname, '/public/')
+const MEMORY = new memoryStore({ reapInterval: 60000 * 10 })
 
 let players = {}
 
 app
+  .set('view engine', 'ejs')
+  .set('views', 'views')
+  .use(cookieParser())
+  .use(session({
+    saveUninitialized: true,
+    secret: 'psst',
+    store: MEMORY,
+    resave: true
+  }))
   .use(urlencoded({ extended: true }))
   .use(static(ROOT))
-  .get('/', (req, res) => res.sendFile(ROOT, 'index.html'))
+  .use('/', require('./routes/index'))
+  .use('/game', require('./routes/game'))
 
 io
-  .on('connection', async socket => {
-    console.info(`Player-${socket.id} has joined`)
+  .on('connection', socket => {
+    const playerID = socket.id
+    console.info(`Player[${playerID}] has joined`)
 
-    const pokemons = await getStarterPokemons()
-    io.sockets.emit('chooseStarter', pokemons)
-
-    socket.on('newPlayer', (sprite) => {
-      players[socket.id] = {
-        x: 300,
-        y: 300,
-        sprite: sprite
-      }
-      io.sockets.emit('drawPlayers', players)
-    })
-    .on('move', data => {
-      const player = players[socket.id] || {}
-      if (data.up) player.y -= 10
-      if (data.down) player.y += 10
-      if (data.left) player.x -= 10
-      if (data.right) player.x += 10
-      io.sockets.emit('drawPlayers', players)
-    })
-    .on('disconnect', socket => {
-      console.info(`Player-${socket.id} has left`)
-    })
+    socket
+      .on('newPlayer', sprite => {
+        const randomX = Math.floor(Math.random() * 800)
+        const randomY = Math.floor(Math.random() * 800)
+        
+        players[playerID] = {
+          x: randomX,
+          y: randomY,
+          xOrigin: randomX,
+          yOrigin: randomY,
+          health: 100,
+          sprite: sprite,
+          height: 80,
+          width: 128
+        }
+        io.sockets.emit('drawPlayer', players[playerID])
+      })
+      .on('move', ({x, y}) => {
+        const player = players[playerID] || {}
+        player.xOrigin = player.x
+        player.yOrigin = player.y
+        player.x = x
+        player.y = y
+        io.sockets.emit('drawPlayer', player)
+      })
+      .on('disconnect', () => {
+        console.info(`Player${playerID} has left`)
+      })
   })
 
 server.listen(PORT, () => {

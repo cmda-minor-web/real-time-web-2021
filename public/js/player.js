@@ -1,39 +1,41 @@
 export default class Player {
   constructor() {
-    this.move = {
-      up: false,
-      down: false,
-      left: false,
-      right: false
-    }
     this.sprite
-    this.x = 0
-    this.y = 0
+    this.width = 128
+    this.height = 80
+    this.x;
+    this.y;
+    this.shotAngle
   }
 
-  handleMovement(key, value) {
+  handleMovement(key) {
     switch (key) {
       case 'w':
-        this.move.up = value
+        this.y -= 10
+        break;
+      case 'ArrowUp':
+        this.y -= 10
         break;
       case 's':
-        this.move.down = value
+        this.y += 10
+        break;
+      case 'ArrowDown':
+        this.y += 10
         break;
       case 'a':
-        this.move.left = value
+        this.x -= 10
+        break;
+      case 'ArrowLeft':
+        this.x -= 10
         break;
       case 'd':
-        this.move.right = value
+        this.x += 10
+        break;
+      case 'ArrowRight':
+        this.x += 10
         break;
       default:
         break;
     }
-  }
-
-  setShotAngle(mx, my) {
-    const mousePosition = { x: mx, y: my }
-    let deltaX = mousePosition.x - this.x
-    let deltaY = mousePosition.y - this.y
-    
   }
 }

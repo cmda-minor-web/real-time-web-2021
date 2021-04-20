@@ -1,0 +1,23 @@
+<%- include('../partials/head', { path: 'select' }) %>
+<main>
+  <section class="select-avatar">
+    <h2>Choose your character:</h2>
+    <form class="starters" action="/" method="POST">
+      <% pokemons.map((pokemon, index) => { %>
+        <div class="starters--option">
+          <input
+            type="radio"
+            name="starter"
+            value="<%= pokemon.name %>"
+            class="starters--option__input"
+            id="starter<%= index + 1 %>"
+          >
+          <img src="<%= pokemon.sprite %>" class="starters--option__image"/>
+          <label for="starter<%= index + 1 %>" class="starters--option__name"><% pokemon.name %></label>
+        </div>
+      <% }) %>
+      <button type="submit" disabled>Choose</button>
+    </form>
+  </section>
+</main>
+<%- include('../partials/foot') %>
