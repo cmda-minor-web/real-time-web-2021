@@ -1,3 +1,11 @@
+const socket = io();
+
+socket.on('connect', () => {
+	console.log('Connected to server...');
+});
+
+socket.on('data', data => console.log(data));
+
 const labels = ['12:00 PM', '13:00 PM', '14:00 PM', '15:00 PM'];
 
 const data = {
