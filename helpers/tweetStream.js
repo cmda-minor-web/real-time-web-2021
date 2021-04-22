@@ -1,3 +1,4 @@
+require('dotenv').config();
 const needle = require('needle');
 const rulesURL = 'https://api.twitter.com/2/tweets/search/stream/rules';
 const streamURL =
@@ -25,7 +26,7 @@ async function setRules() {
 	const res = await needle('post', rulesURL, data, {
 		headers: {
 			'content-type': 'application/json',
-			Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+			Authorization: `Bearer ${process.env.TWITTER_TOKEN}`,
 		},
 	});
 
@@ -49,7 +50,7 @@ async function deleteRules(rules) {
 	const res = await needle('post', rulesURL, data, {
 		headers: {
 			'content-type': 'application/json',
-			Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+			Authorization: `Bearer ${process.env.TWITTER_TOKEN}`,
 		},
 	});
 
@@ -59,15 +60,16 @@ async function deleteRules(rules) {
 function streamTweets(socket) {
 	const stream = needle.get(streamURL, {
 		headers: {
-			Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+			Authorization: `Bearer ${process.env.TWITTER_TOKEN}`,
 		},
 	});
 
 	stream.on('data', data => {
 		try {
-			const json = JSON.parse(data);
-			socket.emit('tweet', json);
-		} catch (error) {}
+			socket.emit('tweet', data);
+		} catch (error) {
+			console.error(error);
+		}
 	});
 }
 
