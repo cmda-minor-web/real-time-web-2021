@@ -5,6 +5,26 @@ const bitvavo = require('bitvavo')().options({
 	DEBUGGING: false,
 });
 
+// Get cryptocurrency price, store in object and send object to client side by emitting event
+// async function getTickerPrice(socket) {
+// 	return setInterval(async () => {
+// 		try {
+// 			const res = await bitvavo.TickerPrice({ market: 'BTC-EUR' });
+// 			const { price } = res;
+// 			const currentTime = new Date();
+
+// 			const cryptoPriceData = {
+// 				price: price,
+// 				time: currentTime.toLocaleTimeString(),
+// 			};
+
+// 			socket.emit('priceUpdate', cryptoPriceData);
+// 		} catch (error) {
+// 			console.error(error);
+// 		}
+// 	}, 5000);
+// }
+
 function getBitcoinPrice(socket) {
 	return setInterval(() => {
 		bitvavo.tickerPrice({ market: 'BTC-EUR' }, (err, res) => {
