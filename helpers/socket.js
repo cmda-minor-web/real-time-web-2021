@@ -14,7 +14,7 @@ function getBitcoinPrice(socket) {
 					time: new Date().toLocaleTimeString(),
 				};
 
-				socket.emit('data', { data: data });
+				socket.emit('data', data);
 			} else {
 				console.log(err);
 			}

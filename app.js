@@ -26,8 +26,8 @@ app.use(express.static(path.join(__dirname, '/public')))
 	.use(home);
 
 // Websocket
-io.on('connect', () => {
-	getBitcoinPrice(io);
+io.on('connection', socket => {
+	getBitcoinPrice(socket);
 });
 
 // Initiate server on port
