@@ -1,5 +1,5 @@
-# Pokémon Free 4 All
-This web application is a real time multiplayer game. The user can choose between 3 pokémon sprites, fetched by the [Poké API](https://pokeapi.co/). The goal of the game is to defeat the oppnonents by shooting them down (based on the mini game Tanks).
+# Pokémon Coin Battle
+This web application is a real time multiplayer game. The user can choose between 3 pokémon sprites, fetched by the [Poké API](https://pokeapi.co/). The goal of the game is collect coins that will randomly appear on the canvas. The player with the most coins will win the battle.
 
 ---
 ## Concept
@@ -15,26 +15,30 @@ When a pokemon is chosen, you'll enter a random available room to find opponents
 ## Data Model
 <img src="docs/images/data_model.svg" alt="Data model" />
 
+The client side javascript keeps information about the user. If it get updated, the changes will be sent to the server which updates that state to all the other sockets. So if the player moves it character on the canvas, it will be shown to the other players as well.
+
+The coins that need to be collected are generated on the client-side as well. That way, the more players join the more coins will appear. If a coins is generated, it will update this state to every user too.
+
 ---
 ## MoSCoW
 #### Must haves
 - [x] Connection to API
 - [x] Real Time connection
 - [x] Character movement
-- [ ] Shooting with cursor
+- [x] Random coins drops
 - [ ] Physics (borders, collision etc.)
 #### Should haves
 - [x] Use sprites as character
 - [ ] Asign players to rooms
+- [ ] Make battles only 2/3 minutes long
 #### Could haves
 - [ ] Maximum of 4 players per room
 - [ ] Let players create own room
-- [ ] Turning sprites based on cursor position
 - [ ] Database & authorization
+- [ ] Leaderboard and scores
 #### Would haves
 - [ ] Choose character sprite out full database
 - [ ] Chat funcionallity
-- [ ] Leaderboard and scores
 
 ---
 ## Dependencies
@@ -53,7 +57,7 @@ When a pokemon is chosen, you'll enter a random available room to find opponents
     ```terminal
     npm run start
     ```
-    or development mode:
+4. or development mode:
     
     ```terminal
     npm run dev
