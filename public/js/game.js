@@ -1,5 +1,5 @@
 import Player from './player.js'
-import { drawAvatarOnCanvas } from './canvas.js'
+import { drawAvatarOnCanvas, drawCoin } from './canvas.js'
 
 const socket = io()
 const currentPlayer = new Player
@@ -13,10 +13,27 @@ document.addEventListener('keydown', e => {
   socket.emit('move', currentPlayer)
 })
 
+document.addEventListener('click', e => {
+  if (e.target.nodeName === 'CANVAS') {
+    currentPlayer.shotAngleX = e.x
+    currentPlayer.shotAngleY = e.y
+    socket.emit('shooting', currentPlayer)
+  }
+})
+
 socket
   .emit('newPlayer', sprite)
-  .on('drawPlayer', player => {
-    currentPlayer.x = player.x
-    currentPlayer.y = player.y
-    drawAvatarOnCanvas(player)
+  .on('drawPlayers', players => {
+    const playersArray = Object.values(players)
+    playersArray.forEach(player => {
+      drawAvatarOnCanvas(player)
+    })
   })
+
+setInterval(() => {
+  drawCoin()
+}, getRandomNumber(6000, 8000))
+
+export function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min)
+}

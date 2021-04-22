@@ -36,20 +36,17 @@ io
 
     socket
       .on('newPlayer', sprite => {
-        const randomX = Math.floor(Math.random() * 800)
-        const randomY = Math.floor(Math.random() * 800)
-        
         players[playerID] = {
-          x: randomX,
-          y: randomY,
-          xOrigin: randomX,
-          yOrigin: randomY,
-          health: 100,
+          x: 300,
+          y: 300,
+          xOrigin: 300,
+          yOrigin: 300,
+          score: 0,
           sprite: sprite,
           height: 80,
           width: 128
         }
-        io.sockets.emit('drawPlayer', players[playerID])
+        io.sockets.emit('drawPlayers', players)
       })
       .on('move', ({x, y}) => {
         const player = players[playerID] || {}
@@ -57,7 +54,7 @@ io
         player.yOrigin = player.y
         player.x = x
         player.y = y
-        io.sockets.emit('drawPlayer', player)
+        io.sockets.emit('drawPlayers', players)
       })
       .on('disconnect', () => {
         console.info(`Player${playerID} has left`)

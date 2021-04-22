@@ -1,3 +1,5 @@
+import { getRandomNumber } from './game.js'
+
 // HTML canvas element
 const canvas = document.getElementById('canvas')
 const context = drawCanvas()
@@ -18,17 +20,21 @@ export function drawCanvas() {
  * @param {Object} player Destrucutred player to size and coordinates
  */
 export function drawAvatarOnCanvas({ x, y, xOrigin, yOrigin, height, width, sprite }) {
-  context.clearRect(xOrigin, yOrigin, width, height, sprite)
+  context.clearRect(xOrigin, yOrigin, width, height)
   context.beginPath()
   const image = new Image()
+  image.src = sprite
   image.onload = () => {
     context.drawImage(image, x, y, width, height)
   }
-  image.src = sprite
 }
 
-export function drawShot(x, y) {
-  context.fillStyle = '#5370b3'
+export function drawCoin() {
+  let x = getRandomNumber(20, (canvas.width - 20))
+  let y = getRandomNumber(20, (canvas.height - 20))
+  console.log(x, y)
+
+  context.fillStyle = 'gold'
   context.beginPath()
   context.arc(x, y, 10, 0, 2 * Math.PI)
   context.closePath()
