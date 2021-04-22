@@ -16,9 +16,6 @@ const myChart = new Chart(ctx, {
 	},
 });
 
-const { data } = myChart.data.datasets[0];
-const { labels } = myChart.data;
-
 socket.on('connect', () => {
 	console.log('Connected to server...');
 
