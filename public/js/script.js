@@ -30,3 +30,5 @@ socket.on('connect', () => {
 		myChart.update();
 	});
 });
+
+socket.on('tweet', tweet => console.log(tweet));

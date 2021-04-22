@@ -12,8 +12,14 @@ const port = process.env.PORT || 3000;
 // Routes
 const home = require('./routes/home');
 
-// Bitvavo API module
+// Import modules
 const getBitcoinPrice = require('./helpers/socket');
+const {
+	getRules,
+	setRules,
+	deleteRules,
+	streamTweets,
+} = require('./helpers/tweetStream');
 
 // Set view engine
 app.set('view engine', 'hbs')
@@ -26,7 +32,21 @@ app.use(express.static(path.join(__dirname, '/public')))
 	.use(home);
 
 // Websocket
-io.on('connection', socket => {
+io.on('connection', async socket => {
+	let currentRules;
+
+	try {
+		currentRules = await getRules();
+
+		await deleteRules(currentRules);
+
+		await setRules();
+	} catch (error) {
+		console.log(error);
+		process.exit(1);
+	}
+
+	streamTweets(socket);
 	getBitcoinPrice(socket);
 });
 
