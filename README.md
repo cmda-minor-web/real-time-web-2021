@@ -4,6 +4,7 @@ This web application is a real time multiplayer game. The user can choose betwee
 ## Table of Contents
 - **[Concept](https://github.com/MarvinMichel/real-time-web-2021#concept)**
 - **[Data Model](https://github.com/MarvinMichel/real-time-web-2021#data-model)**
+- **[API](https://github.com/MarvinMichel/real-time-web-2021#api)**
 - **[MoSCoW: Feature List](https://github.com/MarvinMichel/real-time-web-2021#moscow-feature-list-1)**
   - [Must haves](https://github.com/MarvinMichel/real-time-web-2021#must-haves)
   - [Should haves](https://github.com/MarvinMichel/real-time-web-2021#should-haves)
@@ -11,6 +12,7 @@ This web application is a real time multiplayer game. The user can choose betwee
   - [Would haves](https://github.com/MarvinMichel/real-time-web-2021#would-haves)
 - **[Dependencies](https://github.com/MarvinMichel/real-time-web-2021#dependencies)**
 - **[Install guide](https://github.com/MarvinMichel/real-time-web-2021#guide)**
+
 ---
 ## Concept
 Choose a starter pokemon as your character to find your opponents.
@@ -20,6 +22,33 @@ Choose a starter pokemon as your character to find your opponents.
 When a pokemon is chosen, you'll enter the game with the characters sprite. Coins will be placed on the board in random places, and on random times. The coins are client side created, so the more player join, the more coins will appear.
 
 <img src="docs/images/game.svg" alt="Preview of the game" />
+
+---
+## API
+The pokéAPI has all the information about the available Pokémons. It contains JSON objects with moves, stats and sprites. This application only uses the sprites and names of the pokemon.
+
+#### Object structure
+```json
+{
+  "abilities": Array,
+  "base_experience": Number,
+  "forms": Array,
+  "game_indices": Array,
+  "height": Number,
+  "held_items": Array,
+  "id": Number,
+  "is_default": Boolean,
+  "location_area_encouters": String,
+  "moves": Array,
+  "order": Number,
+  "past_types": Array,
+  "species": Array,
+  "sprites": Array,
+  "stats": Array,
+  "types": Array,
+  "weight": Number
+}
+```
 
 ---
 ## Data Model
