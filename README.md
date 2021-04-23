@@ -5,11 +5,11 @@ This web application is a real time multiplayer game. The user can choose betwee
 ## Concept
 Choose a starter pokemon as your character to find your opponents.
 
-<img src="docs/images/choose_starter.png" alt="Choose starter" />
+<img src="docs/images/choose_starter.svg" alt="Choose starter" />
 
-When a pokemon is chosen, you'll enter a random available room to find opponents in. A maximum of 4 players can join the same room.
+When a pokemon is chosen, you'll enter the game with the characters sprite. Coins will be placed on the board in random places, and on random times. The coins are client side created, so the more player join, the more coins will appear.
 
-<img src="docs/images/game-preview.png" alt="Preview of the game" />
+<img src="docs/images/game.svg" alt="Preview of the game" />
 
 ---
 ## Data Model
