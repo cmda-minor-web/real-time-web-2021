@@ -29,6 +29,27 @@ socket.on('connect', () => {
 
 		myChart.update();
 	});
-});
 
-socket.on('tweet', tweet => console.log(tweet));
+	socket.on('tweet', tweet => {
+		const tweetData = {
+			id: tweet.data.id,
+			text: tweet.data.text,
+			username: `@${tweet.includes.users[0].username}`,
+		};
+
+		const tweetStream = document.querySelector('#tweetStream');
+		const tweetElement = document.createElement('div');
+		tweetElement.innerHTML = `
+			<div>
+				<h5>${tweetData.text}</h5>
+				<h6>${tweetData.username}</h6>
+
+				<a href="https://twitter.com/${tweetData.username}/status/${tweetData.id}"></a>
+			</div>
+		`;
+
+		tweetStream.appendChild(tweetElement);
+
+		setTimeout(() => tweetElement.remove(), 5000);
+	});
+});
