@@ -46,7 +46,7 @@ io.on('connection', async socket => {
 		process.exit(1);
 	}
 
-	streamTweets(socket);
+	streamTweets(io);
 	getBitcoinPrice(socket);
 });
 
