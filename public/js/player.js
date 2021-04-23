@@ -7,7 +7,8 @@ export default class Player {
     this.y = 300
     this.width = 128
     this.height = 80
-    this.score
+    this.score = 0
+    this.isColliding = false
   }
 
   handleMovement(key) {
