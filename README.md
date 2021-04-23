@@ -90,9 +90,12 @@ The coins that need to be collected are generated on the client-side as well. Th
 
 ---
 ### Guide
-1. Download the zip-file or clone the repo
-2. Run `npm i` inside the terminal to install dependency packages
-3. Run the application in local mode:
+1. [Download the zip-file](https://github.com/MarvinMichel/real-time-web-2021/archive/refs/heads/eindopdracht.zip) or clone the repo:
+    ```terminal
+    gh repo clone MarvinMichel/real-time-web-2021
+    ```
+3. Run `npm i` inside the terminal to install dependency packages
+4. Run the application in local mode:
     ```terminal
     npm run start
     ```
