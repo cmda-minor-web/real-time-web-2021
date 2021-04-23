@@ -2,15 +2,15 @@
 This web application is a real time multiplayer game. The user can choose between 3 pokémon sprites, fetched by the [Poké API](https://pokeapi.co/). The goal of the game is collect coins that will randomly appear on the canvas. The player with the most coins will win the battle.
 
 ## Table of Contents
-- ##### [Concept](#https://github.com/MarvinMichel/real-time-web-2021#concept)
-- ##### [Data Model](https://github.com/MarvinMichel/real-time-web-2021#data-model)
-- ##### [MoSCoW: Feature List](https://github.com/MarvinMichel/real-time-web-2021#moscow-feature-list-1)
+- **[Concept](#https://github.com/MarvinMichel/real-time-web-2021#concept)**
+- **[Data Model](https://github.com/MarvinMichel/real-time-web-2021#data-model)**
+- **[MoSCoW: Feature List](https://github.com/MarvinMichel/real-time-web-2021#moscow-feature-list-1)**
   - [Must haves](https://github.com/MarvinMichel/real-time-web-2021#must-haves)
   - [Should haves](https://github.com/MarvinMichel/real-time-web-2021#should-haves)
   - [Could haves](https://github.com/MarvinMichel/real-time-web-2021#could-haves)
   - [Would haves](https://github.com/MarvinMichel/real-time-web-2021#would-haves)
-- ##### [Dependencies](https://github.com/MarvinMichel/real-time-web-2021#dependencies)
-- ##### [Install guide](https://github.com/MarvinMichel/real-time-web-2021#guide)
+- **[Dependencies](https://github.com/MarvinMichel/real-time-web-2021#dependencies)**
+- **[Install guide](https://github.com/MarvinMichel/real-time-web-2021#guide)**
 ---
 ## Concept
 Choose a starter pokemon as your character to find your opponents.
