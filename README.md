@@ -4,7 +4,7 @@ This web application is a real time multiplayer game. The user can choose betwee
 ## Table of Contents
 - ##### [Concept](#https://github.com/MarvinMichel/real-time-web-2021#concept)
 - ##### [Data Model](https://github.com/MarvinMichel/real-time-web-2021#data-model)
-- ##### [MoSCoW: Feature List](https://github.com/MarvinMichel/real-time-web-2021#moscow:-feature-list)
+- ##### [MoSCoW: Feature List](https://github.com/MarvinMichel/real-time-web-2021#moscow-feature-list-1)
   - [Must haves](https://github.com/MarvinMichel/real-time-web-2021#must-haves)
   - [Should haves](https://github.com/MarvinMichel/real-time-web-2021#should-haves)
   - [Could haves](https://github.com/MarvinMichel/real-time-web-2021#could-haves)
