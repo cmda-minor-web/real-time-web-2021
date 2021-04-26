@@ -45,7 +45,7 @@ The coins that need to be collected are generated on the client-side as well. Th
 - [x] Real Time connection
 - [x] Character movement
 - [x] Random coins drops
-- [ ] Physics (borders, collision etc.)
+- [x] Colission detection
 #### Should haves
 - [x] Use sprites as character
 - [ ] Asign players to rooms
