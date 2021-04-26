@@ -1,14 +1,14 @@
 export default class Player {
-  constructor() {
-    this.sprite
+  constructor(x, y, sprite, cBox) {
+    this.sprite = sprite
+    this.cBox = cBox
     this.yOrigin
     this.xOrigin
-    this.x = 300
-    this.y = 300
+    this.x = x
+    this.y = y
     this.width = 128
     this.height = 80
     this.score = 0
-    this.isColliding = false
   }
 
   handleMovement(key) {
@@ -16,18 +16,22 @@ export default class Player {
       case 'w':
         this.yOrigin = this.y
         this.y -= 10
+        this.cBox.y -= 10
         break
       case 's':
         this.yOrigin = this.y
         this.y += 10
+        this.cBox.y += 10
         break
       case 'a':
         this.xOrigin = this.x
         this.x -= 10
+        this.cBox.x -= 10
         break
       case 'd':
         this.xOrigin = this.x
         this.x += 10
+        this.cBox.x += 10
         break
       default:
         break
