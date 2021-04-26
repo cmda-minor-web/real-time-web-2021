@@ -28,27 +28,7 @@ When a pokemon is chosen, you'll enter the game with the characters sprite. Coin
 The pokéAPI has all the information about the available Pokémons. It contains JSON objects with moves, stats and sprites. This application only uses the sprites and names of the pokemon.
 
 #### Object structure
-```json
-{
-  "abilities": Array,
-  "base_experience": Number,
-  "forms": Array,
-  "game_indices": Array,
-  "height": Number,
-  "held_items": Array,
-  "id": Number,
-  "is_default": Boolean,
-  "location_area_encouters": String,
-  "moves": Array,
-  "order": Number,
-  "past_types": Array,
-  "species": Array,
-  "sprites": Array,
-  "stats": Array,
-  "types": Array,
-  "weight": Number
-}
-```
+<img src="docs/images/object_preview.svg" alt="Data model" />
 
 ---
 ## Data Model
