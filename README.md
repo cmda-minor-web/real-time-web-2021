@@ -3,6 +3,7 @@ This web application is a real time multiplayer game. The user can choose betwee
 
 ## Table of Contents
 - **[Concept](https://github.com/MarvinMichel/real-time-web-2021#concept)**
+- **[Live Demo](https://github.com/MarvinMichel/real-time-web-2021#live-demo)**
 - **[Data Model](https://github.com/MarvinMichel/real-time-web-2021#data-model)**
 - **[API](https://github.com/MarvinMichel/real-time-web-2021#api)**
 - **[MoSCoW: Feature List](https://github.com/MarvinMichel/real-time-web-2021#moscow-feature-list-1)**
@@ -22,6 +23,10 @@ Choose a starter pokemon as your character to find your opponents.
 When a pokemon is chosen, you'll enter the game with the characters sprite. Coins will be placed on the board in random places, and on random times. The coins are client side created, so the more player join, the more coins will appear.
 
 <img src="docs/images/game.svg" alt="Preview of the game" />
+
+---
+## Live Demo
+Try the game yourself! You can find it [here](https://pokemon-coingame.herokuapp.com/)
 
 ---
 ## API
