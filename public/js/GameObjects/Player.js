@@ -16,20 +16,20 @@ export default class Player {
   handleMovement(key) {
     switch (key) {
       case 'w':
-        this.y -= 10
-        this.cBox.y -= 10
+        this.y -= 20
+        this.cBox.y -= 20
         break
       case 's':
-        this.y += 10
-        this.cBox.y += 10
+        this.y += 20
+        this.cBox.y += 20
         break
       case 'a':
-        this.x -= 10
-        this.cBox.x -= 10
+        this.x -= 20
+        this.cBox.x -= 20
         break
       case 'd':
-        this.x += 10
-        this.cBox.x += 10
+        this.x += 20
+        this.cBox.x += 20
         break
       default:
         break
