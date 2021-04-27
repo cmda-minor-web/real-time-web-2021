@@ -64,19 +64,16 @@ server.listen(PORT, () => {
 
 function addNewPlayer(
   playerID,
-  { x, y, sprite }
+  { x, y, sprite, height, width, cBox }
 ) {
   players[playerID] = {
     x: x,
     y: y,
+    height: height,
+    width: width,
     score: 0,
     sprite: sprite,
-    height: 80,
-    width: 128,
-    cBox: {
-      x: x + 65,
-      y: y + 65
-    }
+    cBox: cBox
   }
 }
 
