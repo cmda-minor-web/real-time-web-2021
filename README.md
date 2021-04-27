@@ -53,13 +53,14 @@ The coins that need to be collected are generated on the client-side as well. Th
 - [x] Colission detection
 #### Should haves
 - [x] Use sprites as character
+- [x] Show score to user
 - [ ] Asign players to rooms
 - [ ] Make battles only 2/3 minutes long
 #### Could haves
 - [ ] Maximum of 4 players per room
 - [ ] Let players create own room
 - [ ] Database & authorization
-- [ ] Leaderboard and scores
+- [ ] Leaderboard
 #### Would haves
 - [ ] Choose character sprite out full database
 - [ ] Chat funcionallity

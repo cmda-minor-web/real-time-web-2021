@@ -7,6 +7,7 @@ import { context, removeObject } from './canvas.js'
 const
   socket = io(),
   sprite = document.querySelector('input[type=hidden').value,
+  score = document.querySelector('#score'),
   x = getRandomNumber(100, (canvas.width - 100)),
   y = getRandomNumber(100, (canvas.height - 100)),
   currentPlayer = new Player(x, y, sprite)
@@ -23,6 +24,7 @@ socket
   .on('removePlayer', removeObject)
   .on('drawObjects', drawObjects)
   .on('spawnCoin', drawCoins)
+  .on('updateScore', updatePlayerScore)
   .on('removeCoin', removeObject)
 
 /**
@@ -56,6 +58,10 @@ function drawCoins(coins) {
     coin.__proto__.draw = Coin.prototype.draw
     coin.draw(context)
   })
+}
+
+function updatePlayerScore(player) {
+  score.innerText = player.score
 }
 
 // Coin generation

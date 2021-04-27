@@ -27,6 +27,20 @@ h1, h2, h3 {
   -webkit-text-stroke: .025em var(--cl-blue);
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  padding: .25em 3%;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+#score {
+  width: max-content;
+}
+
 main {
   background: hsl(0, 0%, 81%);
   border: 2em solid var(--cl-blue);

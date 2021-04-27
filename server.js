@@ -38,11 +38,12 @@ io.on('connection', socket => {
   socket
     .on('newPlayer', newPlayer => {
       addNewPlayer(playerID, newPlayer)
+      socket.emit('updateScore', players[playerID])
       io.sockets.emit('drawObjects', players, coins)
     })
     .on('move', ({x, y, cBox}) => {
       updatePlayerPosition(x, y, cBox, players[playerID])
-      checkCollision(players[playerID])
+      checkCollision(players[playerID], socket)
       io.sockets.emit('drawObjects', players, coins)
     })
     .on('generateCoin', coin => {
@@ -88,13 +89,17 @@ function updatePlayerPosition(
   player.cBox = cBox
 }
 
-function checkCollision(player) {
+function checkCollision(player, socket) {
   coins.forEach(coin => {
     if (circleIntersect(coin, player.cBox)) {
-      player.score += 1
-      console.log('Coins collected: ', player.score)
-      io.sockets.emit('removeCoin', coin)
-      coins = coins.filter(item => item !== coin)
+      updatePlayerScore(coin, player, socket)
     }
   })
+}
+
+function updatePlayerScore(coin, player, socket) {
+  player.score += 1
+  coins = coins.filter(item => item !== coin)
+  socket.emit('updateScore', player)
+  io.sockets.emit('removeCoin', coin)
 }
