@@ -5,6 +5,7 @@ const io = require('socket.io')(server)
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const memoryStore = session.MemoryStore
+const circleIntersect = require('./utils/circleIntersect')
 const { static, urlencoded } = require('express')
 const { join } = require('path')
 
@@ -32,7 +33,7 @@ app
 
 io.on('connection', socket => {
   const playerID = socket.id
-  console.info(`Player[${playerID}] has joined`)
+  console.info(`Player [${playerID}] has joined`)
 
   socket
     .on('newPlayer', newPlayer => {
@@ -41,15 +42,15 @@ io.on('connection', socket => {
     })
     .on('move', ({x, y, cBox}) => {
       updatePlayerPosition(x, y, cBox, players[playerID])
-      checkCollision(players[playerID], players[playerID].cBox)
+      checkCollision(players[playerID])
       io.sockets.emit('drawObjects', players, coins)
     })
     .on('generateCoin', coin => {
       coins.push(coin)
-      io.sockets.emit('spawnCoin', coin)
+      io.sockets.emit('spawnCoin', coins)
     })
     .on('disconnect', () => {
-      console.info(`Player${playerID} has left`)
+      console.info(`Player [${playerID}] has left`)
       io.sockets.emit('removePlayer', players[playerID])
       delete players[playerID]
     })
@@ -63,18 +64,19 @@ server.listen(PORT, () => {
 
 function addNewPlayer(
   playerID,
-  { x, y, xOrigin, yOrigin, sprite, cBox }
+  { x, y, sprite }
 ) {
   players[playerID] = {
     x: x,
     y: y,
-    xOrigin: xOrigin,
-    yOrigin: yOrigin,
     score: 0,
     sprite: sprite,
     height: 80,
     width: 128,
-    cBox: cBox
+    cBox: {
+      x: x + 65,
+      y: y + 65
+    }
   }
 }
 
@@ -84,31 +86,18 @@ function updatePlayerPosition(
   cBox,
   player
 ) {
-  player.xOrigin = player.x
-  player.yOrigin = player.y
   player.x = destinationX
   player.y = destinationY
   player.cBox = cBox
 }
 
-function checkCollision(
-  player,
-  cBox
-) {
+function checkCollision(player) {
   coins.forEach(coin => {
-    if (circleIntersect(coin, cBox)) {
+    if (circleIntersect(coin, player.cBox)) {
       player.score += 1
       console.log('Coins collected: ', player.score)
       io.sockets.emit('removeCoin', coin)
       coins = coins.filter(item => item !== coin)
     }
   })
-}
-
-function circleIntersect(
-  { x: x1, y: y1, radius: r1 },
-  { x: x2, y: y2, radius: r2 }
-) {
-  let squareDistance = (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
-  return squareDistance <= ((r1 + r2) * (r1 + r2))
 }

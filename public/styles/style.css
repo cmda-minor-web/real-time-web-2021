@@ -4,6 +4,12 @@
   src: url('./Pokemon\ Solid.ttf');
 }
 
+:root {
+  --cl-yellow: hsl(48, 100%, 51%);
+  --cl-blue: hsl(219, 48%, 43%);
+  --cl-dark-blue: hsl(222, 57%, 25%);
+}
+
 *,
 *::before,
 *::after {
@@ -13,33 +19,41 @@
 }
 
 h1, h2, h3 {
-  color: hsl(48, 100%, 51%);
+  color: var(--cl-yellow);
   font-family: 'Pokemon Solid', 'SF Pro Rounded', Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: .05em;
-  text-shadow: -.02em .125em hsl(222, 57%, 25%);
-  -webkit-text-stroke: .025em hsl(219, 48%, 43%);
+  text-shadow: -.02em .125em var(--cl-dark-blue);
+  -webkit-text-stroke: .025em var(--cl-blue);
+}
+
+main {
+  background: hsl(0, 0%, 81%);
+  border: 2em solid var(--cl-blue);
+  height: 100vh;
+  width: 100vw;
 }
 
 .select-avatar {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .starters {
   display: flex;
   flex-wrap: wrap;
+  gap: 2em 3em;
   width: 24em;
 }
 
 .starters--option {
   cursor: pointer;
   position: relative;
-  width: 8em;
+  width: 6em;
 }
 
 .starters--option__input {
@@ -49,7 +63,7 @@ h1, h2, h3 {
 }
 
 .starters--option__input:checked ~ .starters--option__name {
-  box-shadow: 0 .75em 0 -.6em #5370b3;
+  box-shadow: 0 .75em 0 -.6em var(--cl-dark-blue);
 }
 
 .starters--option__name {
@@ -67,7 +81,7 @@ h1, h2, h3 {
 
 .starters--option__image {
   height: 5em;
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
   object-fit: contain;
   width: 100%;
 }
@@ -76,17 +90,28 @@ h1, h2, h3 {
   filter: opacity(.6);
 }
 
-.starters button {
+.starters--button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: var(--cl-blue);
+  border: none;
+  border-radius: .25em;
+  color: var(--cl-yellow);
+  cursor: pointer;
+  font-weight: 700;
   margin: 1.5em auto;
+  padding: .5em 1em;
+}
+
+.starters--button:disabled {
+  cursor: auto;
+  filter: opacity(.5);
 }
 
 #canvas {
-  background-color: white;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 input[tpye=hidden] {

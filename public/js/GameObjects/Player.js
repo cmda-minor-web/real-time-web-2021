@@ -1,11 +1,15 @@
 export default class Player {
-  constructor(x, y, sprite, cBox) {
+  constructor(x, y, sprite) {
     this.sprite = sprite
-    this.cBox = cBox
     this.yOrigin
     this.xOrigin
     this.x = x
     this.y = y
+    this.cBox = {
+      x: this.x + 65,
+      y: this.y + 65,
+      radius: 20
+    }
     this.width = 128
     this.height = 80
     this.score = 0
@@ -35,6 +39,26 @@ export default class Player {
         break
       default:
         break
+    }
+  }
+
+  draw(context, canvas) {
+    context.clearRect(
+      0, 0,
+      canvas.width,
+      canvas.height
+    )
+
+    const image = new Image()
+    image.src = this.sprite
+    image.onload = () => {
+      context.drawImage(
+        image,
+        this.x,
+        this.y,
+        this.width,
+        this.height
+      )
     }
   }
 }
