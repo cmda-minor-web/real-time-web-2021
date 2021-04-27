@@ -8,9 +8,11 @@ const
   socket = io(),
   sprite = document.querySelector('input[type=hidden').value,
   score = document.querySelector('#score'),
-  x = getRandomNumber(100, (canvas.width - 100)),
-  y = getRandomNumber(100, (canvas.height - 100)),
-  currentPlayer = new Player(x, y, sprite)
+  currentPlayer = new Player(
+    getRandomNumber(100, (canvas.width - 100)),
+    getRandomNumber(100, (canvas.height - 100)),
+    sprite
+  )
 
 // Listen to keypresses to control player movement
 document.addEventListener('keydown', e => {
