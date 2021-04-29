@@ -1,5 +1,6 @@
 export default class Player {
-  constructor(x, y, sprite) {
+  constructor(id, x, y, sprite) {
+    this.id = id
     this.sprite = sprite
     this.x = x
     this.y = y

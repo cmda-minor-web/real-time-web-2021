@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8080
 const ROOT = join(__dirname, '/public/')
 const MEMORY = new memoryStore({ reapInterval: 60000 * 10 })
 
-let players = {},
+let players = [],
     coins = []
 
 app
@@ -37,13 +37,18 @@ io.on('connection', socket => {
 
   socket
     .on('newPlayer', newPlayer => {
-      addNewPlayer(playerID, newPlayer)
-      socket.emit('updateScore', players[playerID])
+      players.push(newPlayer)
+      socket.emit('updateScore', newPlayer)
       io.sockets.emit('drawObjects', players, coins)
+      Object.keys(players).length > 1 && io.sockets.emit('startGame')
     })
-    .on('move', ({x, y, cBox}) => {
-      updatePlayerPosition(x, y, cBox, players[playerID])
-      checkCollision(players[playerID], socket)
+    .on('getTime', deadline => {
+      let time = updateTimer(deadline)
+      io.sockets.emit('updateTimer', time)
+    })
+    .on('move', updatedPlayer => {
+      updatePlayerPosition(updatedPlayer)
+      players.forEach(player => checkCollision(player, socket))
       io.sockets.emit('drawObjects', players, coins)
     })
     .on('generateCoin', coin => {
@@ -52,8 +57,9 @@ io.on('connection', socket => {
     })
     .on('disconnect', () => {
       console.info(`Player [${playerID}] has left`)
-      io.sockets.emit('removePlayer', players[playerID])
-      delete players[playerID]
+      let player = players.find(item => item.id === playerID)
+      io.sockets.emit('removePlayer', player)
+      players.filter(item => item.id !== playerID)
     })
 })
 
@@ -63,30 +69,14 @@ server.listen(PORT, () => {
   )
 })
 
-function addNewPlayer(
-  playerID,
-  { x, y, sprite, height, width, cBox }
-) {
-  players[playerID] = {
-    x: x,
-    y: y,
-    height: height,
-    width: width,
-    score: 0,
-    sprite: sprite,
-    cBox: cBox
-  }
-}
-
-function updatePlayerPosition(
-  destinationX,
-  destinationY,
-  cBox,
-  player
-) {
-  player.x = destinationX
-  player.y = destinationY
-  player.cBox = cBox
+function updatePlayerPosition(playerUpdate) {
+  players.forEach(player => {
+    if (player.id === playerUpdate.id) {
+      player.x = playerUpdate.x
+      player.y = playerUpdate.y
+      player.cBox = playerUpdate.cBox
+    }
+  })
 }
 
 function checkCollision(player, socket) {
@@ -97,9 +87,35 @@ function checkCollision(player, socket) {
   })
 }
 
+function updateTimer(deadline) {
+  let now = new Date().getTime()
+  let time = deadline - now
+
+  let minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60))
+  let seconds = Math.floor((time % (1000 * 60)) / 1000)
+
+  if (seconds === 0 && minutes === 0) endGame()
+  return { minutes, seconds }
+}
+
 function updatePlayerScore(coin, player, socket) {
-  player.score += 1
+  player.score++
   coins = coins.filter(item => item !== coin)
   socket.emit('updateScore', player)
   io.sockets.emit('removeCoin', coin)
+}
+
+function getWinner() {
+  const playersArray = Object.values(players)
+  let winner = { score: 0 }
+  for (let i = 0; i < playersArray.length; i++) {
+    winner = playersArray[i].score > winner.score ? playersArray[i] : winner
+  }
+
+  return winner
+}
+
+function endGame() {
+  const winner = getWinner()
+  io.sockets.emit('showWinner', winner)
 }

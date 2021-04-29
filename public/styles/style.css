@@ -29,16 +29,20 @@ h1, h2, h3 {
 
 header {
   display: flex;
-  justify-content: flex-end;
-  left: 0;
+  justify-content: space-between;
+  right: 0;
   padding: .25em 3%;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 50vw;
 }
 
 #score {
   width: max-content;
+}
+
+.timer {
+  font-size: 1.5em;
 }
 
 main {

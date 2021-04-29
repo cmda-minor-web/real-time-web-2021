@@ -7,27 +7,79 @@ import { context, removeObject } from './canvas.js'
 const
   socket = io(),
   sprite = document.querySelector('input[type=hidden').value,
-  score = document.querySelector('#score'),
+  timerMinutes = document.querySelector('.timer #minutes'),
+  timerSeconds = document.querySelector('.timer #seconds'),
+  score = document.querySelector('#score')
+
+let
+  coinGenerator,
+  timer,
+  currentPlayer
+
+// Socket event listeners and emits
+socket
+  .on('connect', onSocketConnection)
+  .on('startGame', startGame)
+  .on('showWinner', endGame)
+  .on('updateTimer', updateTimer)
+  .on('updateScore', updatePlayerScore)
+  .on('drawObjects', drawObjects)
+  .on('spawnCoin', drawObject)
+  .on('removePlayer', removeObject)
+  .on('removeCoin', removeObject)
+
+function onSocketConnection() {
   currentPlayer = new Player(
+    socket.id,
     getRandomNumber(100, (canvas.width - 100)),
     getRandomNumber(100, (canvas.height - 100)),
     sprite
   )
+  socket.emit('newPlayer', currentPlayer)
+}
 
-// Listen to keypresses to control player movement
-document.addEventListener('keydown', e => {
-  currentPlayer.handleMovement(e.key)
-  socket.emit('move', currentPlayer)
-})
+function startGame() {
+  generateCoins()
+  handlePlayerMovement()
+  startGameTimer()
+}
 
-// Socket event listeners and emits
-socket
-  .emit('newPlayer', currentPlayer)
-  .on('removePlayer', removeObject)
-  .on('drawObjects', drawObjects)
-  .on('spawnCoin', drawCoins)
-  .on('updateScore', updatePlayerScore)
-  .on('removeCoin', removeObject)
+function endGame(winner) {
+  clearInterval(timer)
+  clearInterval(coinGenerator)
+  console.log(winner)
+}
+
+function generateCoins() {
+  coinGenerator = setInterval(() => {
+    const coin = new Coin (
+      getRandomNumber(50, (canvas.width - 50)),
+      getRandomNumber(50, (canvas.height - 50)),
+    )
+    socket.emit('generateCoin', coin)
+  }, getRandomNumber(4000, 12000))
+}
+
+function handlePlayerMovement() {
+  document.addEventListener('keydown', e => {
+    currentPlayer.handleMovement(e.key)
+    socket.emit('move', currentPlayer)
+  })
+}
+
+function startGameTimer() {
+  let deadline = new Date()
+  deadline.setSeconds(deadline.getSeconds() + 91)
+
+  timer = setInterval(() => {
+    socket.emit('getTime', deadline.getTime())
+  }, 1000)
+}
+
+function updateTimer({ minutes, seconds }) {
+  timerMinutes.innerText = minutes
+  timerSeconds.innerText = seconds
+}
 
 /**
  * Order redraw of canvas with all gameobjects
@@ -35,42 +87,22 @@ socket
  * @param {Array} coins Array of coin gameobjects
  */
 function drawObjects(players, coins) {
-  drawPlayers(players)
-  drawCoins(coins)
- }
-
-/**
- * Add the draw prototype and runs it for all players
- * @param {Array} players Array of player objects
- */
-function drawPlayers(players) {
-  const playersArray = Object.values(players)
-  playersArray.forEach(player => {
-    player.__proto__.draw = Player.prototype.draw
-    player.draw(context, canvas)
-  })
+  drawObject(players, Player)
+  drawObject(coins)
 }
 
 /**
- * Add the draw prototype and runs it for all coins
- * @param {Array} coins Array of coin gameobjects
+ * Add the draw prototype and runs it for all objects
+ * @param {Array} array Array of game objects (players or coins)
+ * @param {Class} gameObject Class for gameObject template
  */
-function drawCoins(coins) {
-  coins.forEach(coin => {
-    coin.__proto__.draw = Coin.prototype.draw
-    coin.draw(context)
+function drawObject(array, gameObject = Coin) {
+  array.forEach(item => {
+    item.__proto__.draw = gameObject.prototype.draw
+    item.draw(context, canvas)
   })
 }
 
 function updatePlayerScore(player) {
   score.innerText = player.score
 }
-
-// Coin generation
-setInterval(() => {
-  const coin = new Coin (
-    getRandomNumber(50, (canvas.width - 50)),
-    getRandomNumber(50, (canvas.height - 50)),
-  )
-  socket.emit('generateCoin', coin)
-}, getRandomNumber(4000, 12000))

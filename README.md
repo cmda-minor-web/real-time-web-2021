@@ -54,8 +54,9 @@ The coins that need to be collected are generated on the client-side as well. Th
 #### Should haves
 - [x] Use sprites as character
 - [x] Show score to user
+- [ ] Show winner at end of game
 - [ ] Asign players to rooms
-- [ ] Make battles only 2/3 minutes long
+- [x] Make battles only 1.5 minutes long
 #### Could haves
 - [ ] Maximum of 4 players per room
 - [ ] Let players create own room
